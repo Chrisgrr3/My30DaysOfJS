@@ -28,7 +28,13 @@
 // bonusPoints = bonusPoints + 45;
 // console.log(bonusPoints);
 
-document.getElementById("increment-btn").onclick()
+let count = 0;
+
+function increment() {
+    count++;
+    console.log("The count is now " + count);
+}
+
 
 
 
