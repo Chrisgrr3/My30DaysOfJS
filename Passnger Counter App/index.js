@@ -36,6 +36,10 @@ function increment() {
     document.getElementById('count-el').innerHTML = count;
 }
 
+function save() {
+    console.log(count);
+}
+
 
 
 
