@@ -6,10 +6,12 @@ function increment() {
     document.getElementById('count-el').innerHTML = count;
 }
 
-function save() {
-    console.log(count);
-}
+let saveEl = document.getElementById("save-el");
 
+function save() {
+    let status = count + " - ";
+    saveEl.textContent += status;
+}
 
 
 
