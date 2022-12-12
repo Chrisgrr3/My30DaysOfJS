@@ -11,6 +11,8 @@ let saveEl = document.getElementById("save-el");
 function save() {
     let status = count + " - ";
     saveEl.textContent += status;
+    count = 0;
+    document.getElementById('count-el').textContent = count;
 }
 
 function reset() {
