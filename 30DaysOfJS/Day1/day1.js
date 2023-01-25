@@ -21,10 +21,30 @@ and informative
 dataTypes.readTypes();
 // 6. Declare four variables without assigning values
 
+let first;
+let second;
+let third;
+let fourth;
+
 // 7. Declare four variables with assigned values
+
+let a = "a";
+let b = 2;
+let c = true;
+let d = null;
 
 // 8. Declare variables to store your first name, last name, marital status, country and age in multiple lines
 
+let firstName;
+let lastName;
+let maritalStatus;
+let country;
+let age;
+
 // 9. Declare variables to store your first name, last name, marital status, country and age in a single line
 
+let fName; let lName; let mStatus; let ctry; let oldness;
+
 // 10. Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
+
+let myAge = 24; let yourAge = 25; console.log("Your age:", yourAge, "| My Age:", myAge);
