@@ -1,3 +1,4 @@
+const dataTypes = require('./datatypes');
 // 1. Write a single line comment which says, comments can make code readable
 
 // Comments can make code readable.
@@ -17,7 +18,7 @@ and informative
 // 4. Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
 
 // 5. Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
-
+dataTypes.readTypes();
 // 6. Declare four variables without assigning values
 
 // 7. Declare four variables with assigned values
