@@ -34,8 +34,7 @@ function mostElement(array) {
     return `${maxElement}. It occurs ${maxCount} times.`;
 }
 
-console.log(`
-The word that is most frequent in this sentence is ${mostElement(arr)}`)
+console.log(`\nThe word that is most frequent in this sentence is ${mostElement(arr)}`)
 
 // Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let moneys = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
@@ -43,5 +42,4 @@ let moneys = 'He earns 5000 euro from salary per month, 10000 euro annual bonus,
 let salaryMonthly = 5000;
 let bonus = 10000;
 let monthlyBonus = 15000;
-console.log(`
-Annual income: ${(5000*12) + 10000 + (15000*12)}`)
+console.log(`\nAnnual income: ${(5000*12) + 10000 + (15000*12)}`)
