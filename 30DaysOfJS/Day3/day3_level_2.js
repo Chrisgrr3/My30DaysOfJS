@@ -85,37 +85,39 @@ console.log(findSlope(2,2,6,10))
 // 7. Compare the slope of above two questions.
 console.log(2 === findSlope(2,2,6,10));
 
-// 8. Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 
-// 9. Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+// 8. Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
     // Enter hours: 40
     // Enter rate per hour: 28
     // Your weekly earning is 1120
 
-// 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+    
 
-// 11. Compare your first name length and your family name length and you should get this output.
+
+// 9. If the length of your name is greater than 7 say, your name is long else say your name is short.
+
+// 10. Compare your first name length and your family name length and you should get this output.
     // let firstName = 'Christopher'
     // let lastName = 'Guerrero'
     // Expected result: 'Your first name, Chris is longer than your family name, Guerrero'
 
-// 12.Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+// 11.Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
     // let myAge = 250
     // let yourAge = 25
     // Expected result: 'I am 225 years older than you.'
 
-// 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+// 12. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
     // Enter birth year: 1995
     // You are 25. You are old enough to drive
 
     // Enter birth year: 2005
     // You are 15. You will be allowed to drive after 3 years.
 
-// 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+// 13. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
     // Enter number of years you live: 100
     // You lived 3153600000 seconds.
 
-// 15. Create a human readable time format using the Date time object
+// 14. Create a human readable time format using the Date time object
     // YYYY-MM-DD HH:mm
     // DD-MM-YYYY HH:mm
     // DD/MM/YYYY HH:mm
