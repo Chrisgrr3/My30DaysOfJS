@@ -51,6 +51,22 @@ function rectangle () {
 
 // 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 
+function circle () {
+    function toInt(x) {
+        return parseInt(prompt(x))
+    }
+    function area(radius) {
+        return (Math.pow(radius , 2) * Math.PI)
+    }
+    function circumference(radius) {
+        return (2 * radius * Math.PI)
+    }
+    const radius = toInt('What is the radius of your circle?')
+    alert(`The area of your circle is ${area(radius)} and the circumference is ${circumference(radius)}.`)
+}
+// circle();
+
+
 // 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
 // 6. Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
