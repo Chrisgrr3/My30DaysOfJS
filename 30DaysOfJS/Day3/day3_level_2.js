@@ -2,6 +2,14 @@
     // Enter base: 20
     // Enter height: 10
     // The area of the triangle is 100
+function triangleArea () {
+    const base = prompt('What is the base length of the triangle?');
+    const height = prompt('What is the height of the triangle?');
+    const area = .5 * base * height;
+    alert(`The area of your triangle is ${area}.`)
+}
+// triangleArea();
+
 
 // 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
     // Enter side a: 5
