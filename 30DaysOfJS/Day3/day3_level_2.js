@@ -2,6 +2,7 @@
     // Enter base: 20
     // Enter height: 10
     // The area of the triangle is 100
+
 function triangleArea () {
     const base = prompt('What is the base length of the triangle?');
     const height = prompt('What is the height of the triangle?');
@@ -11,11 +12,21 @@ function triangleArea () {
 // triangleArea();
 
 
-// 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+// 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and calculate the perimeter of triangle (perimeter = a + b + c)
     // Enter side a: 5
     // Enter side b: 4
     // Enter side c: 3
     // The perimeter of the triangle is 12
+
+function trianglePerimeter () {
+    const sideA = prompt("Input the length of side a of the triangle.")
+    const sideB = prompt("Input the length of side b of the triangle.")
+    const sideC = prompt("Input the length of side c of the triangle.")
+    const perimeter = parseInt(sideA) + parseInt(sideB) + parseInt(sideC);
+    alert(`The perimeter of your triangle is ${perimeter}.`)
+}
+// trianglePerimeter();
+
 
 // 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 
