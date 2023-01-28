@@ -68,11 +68,19 @@ function circle () {
 
 
 // 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+
 console.log(`The slope is 2`)
 console.log('The x-intercept is 1')
 console.log('The y-intercept is -2')
 
+
 // 6. Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+
+function findSlope(x1, y1, x2, y2) {
+    return((y2 - y1)/(x2 - x1))
+}
+console.log(findSlope(2,2,6,10))
+
 
 // 7. Compare the slope of above two questions.
 
