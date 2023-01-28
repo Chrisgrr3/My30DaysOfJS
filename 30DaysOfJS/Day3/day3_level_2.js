@@ -107,6 +107,18 @@ pay();
 
 // 9. If the length of your name is greater than 7 say, your name is long else say your name is short.
 
+function nameLength() {
+    let name = prompt('What is your first name?')
+    if(name.length > 7) {
+        alert('Your name is long!')
+    }
+    else {
+        alert('Your name is short.')
+    }
+}
+// nameLength();
+
+
 // 10. Compare your first name length and your family name length and you should get this output.
     // let firstName = 'Christopher'
     // let lastName = 'Guerrero'
