@@ -91,7 +91,18 @@ console.log(2 === findSlope(2,2,6,10));
     // Enter rate per hour: 28
     // Your weekly earning is 1120
 
-    
+function pay() {
+    function toInt(x) {
+        return parseInt(prompt(x))
+    }
+    function payCheck(hours, rate) {
+        return hours * rate;
+    }
+    const hours = toInt('How many hours do you work per week?')
+    const rate = toInt('What is your hourly pay?')
+    alert(`Your weekly pay for working ${hours} hours at \$${rate} per hour is \$${payCheck(hours, rate)}.`)
+}
+pay();
 
 
 // 9. If the length of your name is greater than 7 say, your name is long else say your name is short.
