@@ -51,24 +51,42 @@ console.log(typeof parseInt('9.8') == typeof 10);
     console.log(`python length: ${'python'.length} | jargon length: ${'jargon'.length} | ${'python' === 'jargon'}`)
 // 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 
-    // 4 > 3 && 10 < 12 
-    // 4 > 3 && 10 > 12
-    // 4 > 3 || 10 < 12
-    // 4 > 3 || 10 > 12
-    // !(4 > 3)
-    // !(4 < 3)
-    // !(false)
-    // !(4 > 3 && 10 < 12)
-    // !(4 > 3 && 10 > 12)
-    // !(4 === '4')
-    // There is no 'on' in both dragon and python
+    // 4 > 3 && 10 < 12  true
+    console.log(4 > 3 && 10 < 12)
+    // 4 > 3 && 10 > 12  false
+    console.log(4 > 3 && 10 > 12)
+    // 4 > 3 || 10 < 12  true
+    console.log(4 > 3 || 10 < 12)
+    // 4 > 3 || 10 > 12  true 
+    console.log(4 > 3 || 10 > 12) 
+    // !(4 > 3)  false
+    console.log(!(4 > 3))
+    // !(4 < 3)  true
+    console.log(!(4 < 3))
+    // !(false)  true
+    console.log(!(false))
+    // !(4 > 3 && 10 < 12)  false
+    console.log(!(4 > 3 && 10 < 12))
+    // !(4 > 3 && 10 > 12)  true
+    console.log(!(4 > 3 && 10 > 12))
+    // !(4 === '4') true
+    console.log(!(4 === '4'))
+    // There is no 'on' in both dragon and python    false
+    console.log(!'dragon'.includes('on') && !'python'.includes('on'))
 
 // 7. Use the Date object to do the following activities
-
+let today = new Date();
     // What is the year today?
+    console.log(today.getFullYear())
     // What is the month today as a number?
+    console.log(today.getMonth())
     // What is the date today?
+    console.log(today.getDate())
     // What is the day today as a number?
+    console.log(today.getDay())
     // What is the hours now?
+    console.log(today.getHours())
     // What is the minutes now?
+    console.log(today.getMinutes())
     // Find out the numbers of seconds elapsed from January 1, 1970 to now.
+    console.log(Date.now()/1000)
