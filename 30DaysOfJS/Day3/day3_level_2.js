@@ -46,7 +46,7 @@ function rectangle () {
     const perimeter = rectPeri(length, width);
     alert(`The area of your rectangle is ${area} and the perimeter is ${perimeter}.`)
 }
-rectangle();
+// rectangle();
 
 
 // 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
