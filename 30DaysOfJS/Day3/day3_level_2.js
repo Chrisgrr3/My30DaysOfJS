@@ -30,6 +30,25 @@ function trianglePerimeter () {
 
 // 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 
+function rectangle () {
+    function toInt(x) {
+        return parseInt(prompt(x))
+    }
+    function rectArea(length, width) {
+        return (length * width)
+    }
+    function rectPeri(length, width) {
+        return ((2*length) + (2*width))
+    }
+    const length = toInt('Input the length of your rectangle.')
+    const width = toInt('Input the width of your rectangle.')
+    const area = rectArea(length, width);
+    const perimeter = rectPeri(length, width);
+    alert(`The area of your rectangle is ${area} and the perimeter is ${perimeter}.`)
+}
+rectangle();
+
+
 // 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 
 // 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
