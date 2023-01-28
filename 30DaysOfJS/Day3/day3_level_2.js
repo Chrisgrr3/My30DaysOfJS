@@ -83,6 +83,7 @@ console.log(findSlope(2,2,6,10))
 
 
 // 7. Compare the slope of above two questions.
+console.log(2 === findSlope(2,2,6,10));
 
 // 8. Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 
