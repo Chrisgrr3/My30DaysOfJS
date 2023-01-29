@@ -124,6 +124,21 @@ function nameLength() {
     // let lastName = 'Guerrero'
     // Expected result: 'Your first name, Chris is longer than your family name, Guerrero'
 
+function longer() {
+    const firstName = prompt('What is your first name?')
+    const lastName = prompt('What is your family name?')
+    if(firstName.length > lastName.length) {
+        alert(`Your first name, ${firstName} is longer than your family name, ${lastName}.`)
+    }
+    else if (firstName.length == lastName.length){
+        alert(`Your first name, ${firstName} is the same length as your family name, ${lastName}.`)
+    }
+    else {
+        alert(`Your first name, ${firstName} is shorter than your family name, ${lastName}.`)
+    }
+}
+// longer();
+
 // 11.Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
     // let myAge = 250
     // let yourAge = 25
