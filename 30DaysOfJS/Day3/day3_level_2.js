@@ -161,7 +161,20 @@ ageComparison(250, 25);
 
     // Enter birth year: 2005
     // You are 15. You will be allowed to drive after 3 years.
-
+function canDrive() {
+    function toInt(res) {
+        return parseInt(prompt(res))
+    }
+    const birthYear = toInt('What is your birth year?')
+    let today = new Date();
+    const thisYear = today.getFullYear();
+    const age = thisYear - birthYear;
+    if(age >= 18) {
+        alert(`You are ${age}. You are old enough to drive.`)
+    } else {
+        alert(`You are ${age}. You will be allowed to drive after ${18 - age} years.`)
+    }
+}
 // 13. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
     // Enter number of years you live: 100
     // You lived 3153600000 seconds.
