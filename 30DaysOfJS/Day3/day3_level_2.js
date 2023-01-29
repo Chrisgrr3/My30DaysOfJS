@@ -191,6 +191,25 @@ function yearsInSeconds() {
 
 
 // 14. Create a human readable time format using the Date time object
+
+let date = new Date();
+let year = date.getFullYear().toString();
+let month = date.getMonth() + 1;
+let day = date.getDate().toString();
+let hour = date.getHours().toString();
+let minutes = date.getMinutes().toString();
+if(month < 10) {
+    month = '0'.concat(month);
+}
+if(minutes < 10) {
+    minutes = '0'.concat(minutes);
+}
+
     // YYYY-MM-DD HH:mm
+    console.log(`${year}-${month}-${day} ${hour}:${minutes}`)
+
     // DD-MM-YYYY HH:mm
+    console.log(`${day}-${month}-${year} ${hour}:${minutes}`)
+
     // DD/MM/YYYY HH:mm
+    console.log(`${day}/${month}/${year} ${hour}:${minutes}`)
