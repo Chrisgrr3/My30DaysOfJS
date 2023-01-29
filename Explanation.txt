@@ -1,0 +1,1 @@
+This project was created while partaking in 30 Days of JavaScript, a GitHub Repo dedicated to teaching JavaScript
