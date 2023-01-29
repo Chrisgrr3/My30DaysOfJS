@@ -102,7 +102,7 @@ function pay() {
     const rate = toInt('What is your hourly pay?')
     alert(`Your weekly pay for working ${hours} hours at \$${rate} per hour is \$${payCheck(hours, rate)}.`)
 }
-pay();
+// pay();
 
 
 // 9. If the length of your name is greater than 7 say, your name is long else say your name is short.
@@ -143,6 +143,17 @@ function longer() {
     // let myAge = 250
     // let yourAge = 25
     // Expected result: 'I am 225 years older than you.'
+function ageComparison(age1, age2) {
+    const myAge = age1; const yourAge = age2;
+    if(myAge > yourAge) {
+        console.log(`I am ${myAge - yourAge} years older than you.`)
+    } else if (yourAge > myAge) {
+        console.log(`You are ${yourAge - myAge} years older than me.`)
+    } else {
+        console.log(`We are the same age: ${myAge}`)
+    }
+}
+ageComparison(250, 25);
 
 // 12. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
     // Enter birth year: 1995
