@@ -139,6 +139,7 @@ function longer() {
 }
 // longer();
 
+
 // 11.Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
     // let myAge = 250
     // let yourAge = 25
@@ -154,6 +155,7 @@ function ageComparison(age1, age2) {
     }
 }
 ageComparison(250, 25);
+
 
 // 12. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
     // Enter birth year: 1995
@@ -175,6 +177,8 @@ function canDrive() {
         alert(`You are ${age}. You will be allowed to drive after ${18 - age} years.`)
     }
 }
+
+
 // 13. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
     // Enter number of years you live: 100
     // You lived 3153600000 seconds.
