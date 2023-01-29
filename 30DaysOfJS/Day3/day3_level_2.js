@@ -183,6 +183,13 @@ function canDrive() {
     // Enter number of years you live: 100
     // You lived 3153600000 seconds.
 
+function yearsInSeconds() {
+    const years = parseInt(prompt(`Input a number of years.`))
+    const seconds = (years*365*24*60*60);
+    alert(`The are ${seconds} seconds in ${years} years.`)
+}
+
+
 // 14. Create a human readable time format using the Date time object
     // YYYY-MM-DD HH:mm
     // DD-MM-YYYY HH:mm
