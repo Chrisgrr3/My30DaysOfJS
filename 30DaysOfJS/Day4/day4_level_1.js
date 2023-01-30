@@ -23,6 +23,20 @@ function canDrive() {
 // Enter your age: 30
 // You are 5 years older than me.
 
+function whoIsOlder() {
+    const myAge = 24;
+    const yourAge = parseInt(prompt('Enter your age: '));
+    switch(true) {
+        case myAge > yourAge:
+            alert(`I am ${myAge - yourAge} years older than you.`)
+            break;
+        case yourAge > myAge:
+            alert(`You are ${yourAge - myAge} years older than me.`)
+            break;
+        default:
+            alert('We are the same age.')
+    }
+}
 
 
 // 3. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
