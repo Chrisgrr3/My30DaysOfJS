@@ -74,3 +74,18 @@ function season() {
 
     // What is the day today? FrIDAy
     // Friday is a working day.
+
+function isWorkday() {
+    let day = prompt('What is the day today?').toLowerCase();
+    let cap = day.charAt(0).toUpperCase() + day.slice(1,day.length);
+    switch(true) {
+        case cap == 'Saturday' || cap == 'Sunday':
+            alert(`${cap} is a weekend day.`)
+            break;
+        case cap == 'Monday' || cap == 'Tuesday' || cap == 'Wednesday' || cap == 'Thursday' || cap == 'Friday':
+            alert(`${cap} is a working day.`)
+            break;
+        default:
+            alert('You did not input a day of the week. Please check your spelling and try again.')
+    }
+}
