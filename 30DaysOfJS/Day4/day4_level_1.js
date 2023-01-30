@@ -64,3 +64,13 @@ a < b
 
 // Enter a number: 9
 // 9 is is an odd number.
+
+function isEven(number) {
+    number % 2 == 0
+        ? console.log(number.toString().concat(' is an even number.'))
+        :console.log(number.toString().concat(' is an odd number.'))
+}
+isEven(0);
+isEven(1);
+isEven(4);
+isEven(9);
