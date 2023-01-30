@@ -42,12 +42,20 @@ function whoIsOlder() {
 // 3. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
 
 // using if else
+let a = 4;
+let b = 3;
+if (a < b) {
+    console.log(`${a} is less than ${b}.`)
+} else if (b < a) {
+    console.log(`${b} is less than ${a}.`)
+} else {
+    console.log('The numbers are the same.')
+}
+
 // ternary operator.
-//   let a = 4
-//   let b = 3
-//   4 is greater than 3
-
-
+a < b
+    ? console.log(`${a} is less than ${b}.`)
+    : console.log(`${b} is less than ${a}.`)
 
 // 4. Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 
