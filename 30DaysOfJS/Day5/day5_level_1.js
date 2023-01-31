@@ -9,6 +9,8 @@ console.log(fiveEl)
 
 // 3. Find the length of your array
 
+console.log(fiveEl.length);
+
 // 4. Get the first item, the middle item and the last item of the array
 
 // 5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
