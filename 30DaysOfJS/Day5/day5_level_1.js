@@ -50,6 +50,10 @@ itCompanies.forEach((company) => {
 
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 
+let lastEl = itCompanies.length - 1;
+let string1 = itCompanies.slice(0, lastEl).join(', ')
+console.log(string1.concat(` and ${itCompanies[lastEl]} are big IT companies.`))
+
 // 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 
 // 14. Filter out companies which have more than one 'o' without the filter method
