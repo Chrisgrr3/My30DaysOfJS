@@ -4,6 +4,9 @@ let emptyArr = [];
 
 // 2. Declare an array with more than 5 number of elements
 
+let fiveEl = Array(5).fill('X')
+console.log(fiveEl)
+
 // 3. Find the length of your array
 
 // 4. Get the first item, the middle item and the last item of the array
