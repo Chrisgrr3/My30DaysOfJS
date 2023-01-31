@@ -56,6 +56,11 @@ console.log(string1.concat(` and ${itCompanies[lastEl]} are big IT companies.`))
 
 // 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 
+function included(company) {
+    itCompanies.includes(company) ? console.log(company) : console.log(`${company} is not found in this array.`);
+}
+included('Amazon');
+
 // 14. Filter out companies which have more than one 'o' without the filter method
 
 // 15. Sort the array using sort() method
