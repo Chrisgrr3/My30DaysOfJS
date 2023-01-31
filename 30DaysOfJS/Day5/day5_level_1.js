@@ -30,9 +30,11 @@ console.log(itCompanies)
 
 // 8. Print the number of companies in the array
 
-
+console.log(itCompanies.length);
 
 // 9. Print the first company, middle and last company
+
+console.log(itCompanies[0], itCompanies[Math.floor(itCompanies.length/2)], itCompanies[itCompanies.length - 1]);
 
 // 10. Print out each company
 
