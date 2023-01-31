@@ -38,7 +38,15 @@ console.log(itCompanies[0], itCompanies[Math.floor(itCompanies.length/2)], itCom
 
 // 10. Print out each company
 
+itCompanies.forEach((company) => {
+    console.log(company)
+});
+
 // 11. Change each company name to uppercase one by one and print them out
+
+itCompanies.forEach((company) => {
+    console.log(company.toUpperCase())
+})
 
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 
