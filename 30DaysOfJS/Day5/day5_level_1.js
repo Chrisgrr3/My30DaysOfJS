@@ -4,7 +4,7 @@ let emptyArr = [];
 
 // 2. Declare an array with more than 5 number of elements
 
-let fiveEl = Array(5).fill('X')
+let fiveEl = [3, 5, 6, 8, 9]
 console.log(fiveEl)
 
 // 3. Find the length of your array
@@ -13,13 +13,24 @@ console.log(fiveEl.length);
 
 // 4. Get the first item, the middle item and the last item of the array
 
+console.log(fiveEl[0], fiveEl[fiveEl.length - 1], fiveEl[Math.floor(fiveEl.length / 2)])
+
 // 5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+
+const mixedDataTypes = [1, 'taco', true, 'cheese', 8, false]
+console.log(mixedDataTypes.length)
 
 // 6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
+const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
 // 7. Print the array using console.log()
 
+console.log(itCompanies)
+
 // 8. Print the number of companies in the array
+
+
 
 // 9. Print the first company, middle and last company
 
