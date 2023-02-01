@@ -81,6 +81,8 @@ console.log(itCompanies.slice(itCompanies.length - 3, itCompanies.length))
 
 // 19. Slice out the middle IT company or companies from the array
 
+console.log(itCompanies.slice(Math.floor(itCompanies.length/2), Math.ceil(itCompanies.length/2)))
+
 // 20. Remove the first IT company from the array
 
 // 21. Remove the middle IT company or companies from the array
