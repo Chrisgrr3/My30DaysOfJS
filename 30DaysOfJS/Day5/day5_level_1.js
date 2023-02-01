@@ -96,7 +96,9 @@ if(itCompanies.length%2 != 0) {
     console.log(itCompanies.slice(itCompanies.length/2 - 1, itCompanies.length/2 + 1));
 }
 
-
 // 22. Remove the last IT company from the array
+
+console.log(itCompanies.pop())
+console.log(itCompanies)
 
 // 23. Remove all IT companies
