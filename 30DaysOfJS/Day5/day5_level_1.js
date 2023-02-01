@@ -85,6 +85,9 @@ console.log(itCompanies.slice(Math.floor(itCompanies.length/2), Math.ceil(itComp
 
 // 20. Remove the first IT company from the array
 
+let firstElement = itCompanies.shift()
+console.log(itCompanies)
+
 // 21. Remove the middle IT company or companies from the array
 
 // 22. Remove the last IT company from the array
