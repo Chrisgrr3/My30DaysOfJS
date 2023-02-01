@@ -73,9 +73,11 @@ console.log(itCompanies.reverse())
 
 // 17. Slice out the first 3 companies from the array
 
-console.log(itCompanies.reverse().slice(0,3));
+console.log(itCompanies.slice(0,3));
 
 // 18. Slice out the last 3 companies from the array
+
+console.log(itCompanies.slice(itCompanies.length - 3, itCompanies.length))
 
 // 19. Slice out the middle IT company or companies from the array
 
