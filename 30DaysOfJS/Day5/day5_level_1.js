@@ -65,6 +65,8 @@ included('Amazon');
 
 // 15. Sort the array using sort() method
 
+console.log(itCompanies.sort())
+
 // 16. Reverse the array using reverse() method
 
 // 17. Slice out the first 3 companies from the array
