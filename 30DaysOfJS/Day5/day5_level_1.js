@@ -90,6 +90,13 @@ console.log(itCompanies)
 
 // 21. Remove the middle IT company or companies from the array
 
+if(itCompanies.length%2 != 0) {
+    console.log(itCompanies.slice(Math.floor(itCompanies.length/2, Math.ceil(itCompanies.length/2))))
+} else {
+    console.log(itCompanies.slice(itCompanies.length/2 - 1, itCompanies.length/2 + 1));
+}
+
+
 // 22. Remove the last IT company from the array
 
 // 23. Remove all IT companies
