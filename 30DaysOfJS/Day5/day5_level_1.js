@@ -69,9 +69,11 @@ console.log(itCompanies.sort())
 
 // 16. Reverse the array using reverse() method
 
-console.log(itCompanies.sort().reverse())
+console.log(itCompanies.reverse())
 
 // 17. Slice out the first 3 companies from the array
+
+console.log(itCompanies.reverse().slice(0,3));
 
 // 18. Slice out the last 3 companies from the array
 
