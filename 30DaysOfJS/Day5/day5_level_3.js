@@ -24,7 +24,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 
     // Find the range of the ages(max minus min)
     
-    const range = ages[ages.length - 1] - ages[0]
+    const range = maxAge - minAge
     console.log(range)
 
     // Compare the value of (min - average) and (max - average), use abs() method 
