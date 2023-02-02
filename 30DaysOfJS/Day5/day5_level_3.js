@@ -17,14 +17,19 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
         : console.log(ages[Math.floor(ages.length/2)]);
 
     // Find the average age(all items divided by number of items)
-
-    console.log(parseFloat(eval(ages.join(' + ')) / ages.length))
+    const average = parseFloat(eval(ages.join(' + ')) / ages.length)
+    console.log(average)
 
     // Find the range of the ages(max minus min)
+    
+    const range = ages[ages.length - 1] - ages[0]
+    console.log(range)
+
+    // Compare the value of (min - average) and (max - average), use abs() method 
+    
 
 
-
-    // Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
+//1.Slice the first ten countries from the countries array
 
 
 
