@@ -44,3 +44,18 @@ countries.length % 2 == 0
     : console.log(countries[Math.floor(countries.length/2)])
     
 // 4. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+
+function twoArrays(arr) {
+    let result = []
+    if (arr.length % 2 == 0) {
+        result.push(arr.slice(0, arr.length/2))
+        result.push(arr.slice(arr.length/2, arr.length))
+    } else {
+        arr.push('China')
+        arr.sort()
+        result.push(arr.slice(0, arr.length/2))
+        result.push(arr.slice(arr.length/2, arr.length))
+    }
+    console.log(result)
+}
+twoArrays(countries)
