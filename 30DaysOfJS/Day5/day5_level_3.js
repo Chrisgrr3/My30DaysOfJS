@@ -1,3 +1,4 @@
+const countries = require('./countries').countries;
 // 1. The following is an array of 10 students ages:
 
     // const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
@@ -8,7 +9,7 @@
         // Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
 
 
-        
+
 // 2. Find the middle country(ies) in the countries array
 
 
