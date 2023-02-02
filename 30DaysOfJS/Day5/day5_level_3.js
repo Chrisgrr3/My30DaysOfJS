@@ -11,6 +11,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
     const minAge = ages[0];
     const maxAge = ages[ages.length - 1]
     console.log(minAge, maxAge)
+
     // Find the median age(one middle item or two middle items divided by two)
 
     ages.length % 2 == 0
@@ -28,8 +29,8 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
     console.log(range)
 
     // Compare the value of (min - average) and (max - average), use abs() method 
-    
 
+    console.log(parseFloat(Math.abs(minAge - average).toFixed(1)), parseFloat(Math.abs(maxAge - average).toFixed(1)))
 
 //1.Slice the first ten countries from the countries array
 
