@@ -34,7 +34,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 
 // 2.Slice the first ten countries from the countries array
 
-
+console.log(countries.slice(0,10))
 
 // 3. Find the middle country(ies) in the countries array
 
