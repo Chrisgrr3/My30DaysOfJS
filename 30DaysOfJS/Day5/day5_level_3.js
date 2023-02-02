@@ -5,11 +5,12 @@ const countries = require('./countries').countries;
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 
     // Sort the array and find the min and max age
-
+    
     ages.sort();
     console.log(ages)
-    console.log(ages[0], ages[ages.length - 1])
-
+    const minAge = ages[0];
+    const maxAge = ages[ages.length - 1]
+    console.log(minAge, maxAge)
     // Find the median age(one middle item or two middle items divided by two)
 
     ages.length % 2 == 0
@@ -17,6 +18,7 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
         : console.log(ages[Math.floor(ages.length/2)]);
 
     // Find the average age(all items divided by number of items)
+
     const average = parseFloat(eval(ages.join(' + ')) / ages.length)
     console.log(average)
 
