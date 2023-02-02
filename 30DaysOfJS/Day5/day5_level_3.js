@@ -32,12 +32,12 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 
     console.log(parseFloat(Math.abs(minAge - average).toFixed(1)), parseFloat(Math.abs(maxAge - average).toFixed(1)))
 
-//1.Slice the first ten countries from the countries array
+// 2.Slice the first ten countries from the countries array
 
 
 
-// 2. Find the middle country(ies) in the countries array
+// 3. Find the middle country(ies) in the countries array
 
 
 
-// 3. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
+// 4. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
