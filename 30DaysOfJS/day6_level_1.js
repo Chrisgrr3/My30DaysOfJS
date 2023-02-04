@@ -91,8 +91,7 @@ function pattern() {
         console.log('#'.repeat(i))
     }
 }
-pattern()
-
+// pattern()
 
 //   5. Use loop to print the following pattern:
   
@@ -108,7 +107,12 @@ pattern()
     //   9 x 9 = 81
     //   10 x 10 = 100
 
-
+function multPattern() {
+    for(let i = 0; i <= 10; i++) {
+        console.log(`${i} x ${i} = ${i * i}`)
+    }
+}
+multPattern()
 
 //   6. Using loop print the following pattern
   
