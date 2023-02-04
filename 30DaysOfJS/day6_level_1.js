@@ -86,6 +86,12 @@ function toN (n) {
     //       ######
     //       #######
 
+function pattern() {
+    for (let i = 1; i <= 7; i++) {
+        console.log('#'.repeat(i))
+    }
+}
+pattern()
 
 
 //   5. Use loop to print the following pattern:
