@@ -48,7 +48,24 @@ do {
 
 //   2. Iterate 10 to 0 using for loop, do the same using while and do while loop
   
+function tenToZero() {
+    for(let i = 10; i >= 0; i--) {
+        console.log(i)
+    }
 
+    let j = 10;
+    while(j >= 0) {
+        console.log(j)
+        j--
+    }
+
+    let k = 10;
+    do {
+        console.log(k)
+        k--
+    } while (k >= 0)
+}
+// tenToZero()
 
 //   3. Iterate 0 to n using for loop
   
