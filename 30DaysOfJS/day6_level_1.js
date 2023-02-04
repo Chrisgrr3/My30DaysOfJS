@@ -129,7 +129,12 @@ multPattern()
     //    9    81    729
     //    10   100   1000
 
-
+function exponentiated () {
+    for (let i = 0; i <= 10; i++) {
+        console.log(`${i} `, ` ${i**2} `, ` ${i**3} `)
+    }
+}
+exponentiated()
 
 //   7. Use for loop to iterate from 0 to 100 and print only even numbers
   
