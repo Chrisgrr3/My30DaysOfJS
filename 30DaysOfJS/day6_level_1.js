@@ -69,7 +69,12 @@ function tenToZero() {
 
 //   3. Iterate 0 to n using for loop
   
-
+function toN (n) {
+    for(let i = 0; i <= n; i++) {
+        console.log(i)
+    }
+}
+// toN(7);
 
 //   4. Write a loop that makes the following pattern using console.log():
   
