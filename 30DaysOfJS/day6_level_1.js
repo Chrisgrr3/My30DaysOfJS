@@ -147,11 +147,18 @@ function even100() {
         }
     }
 }
-even100()
+// even100()
 
 //   8. Use for loop to iterate from 0 to 100 and print only odd numbers
   
-
+function odd100() {
+    for (let i = 0; i <= 100; i++) {
+        if(i % 2 == 1) {
+            console.log(i)
+        }
+    }
+}
+// odd100()
 
 //   9. Use for loop to iterate from 0 to 100 and print only prime numbers
   
