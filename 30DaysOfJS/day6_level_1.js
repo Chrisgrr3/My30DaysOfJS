@@ -134,11 +134,20 @@ function exponentiated () {
         console.log(`${i} `, ` ${i**2} `, ` ${i**3} `)
     }
 }
-exponentiated()
+// exponentiated()
 
 //   7. Use for loop to iterate from 0 to 100 and print only even numbers
-  
 
+function even100() {
+    for (let i = 0; i <= 100; i++) {
+        if(i % 2 == 0) {
+            console.log(i)
+        } else {
+            continue
+        }
+    }
+}
+even100()
 
 //   8. Use for loop to iterate from 0 to 100 and print only odd numbers
   
