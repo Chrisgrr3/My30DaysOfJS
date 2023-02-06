@@ -212,7 +212,7 @@ function sumEvenOdd() {
     console.log(`The sum of all evens from 0 to 100 is ${evenSum}. And the sum of all odds from 0 to 100 is ${oddSum}.`)
     return evenSum, oddSum;
 }
-sumEvenOdd()
+// sumEvenOdd()
 
 //   12. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
   
@@ -221,7 +221,7 @@ sumEvenOdd()
 function evenOddArray () {
     console.log([evenSum, oddSum])
 }
-evenOddArray()
+// evenOddArray()
 
 //   13. Develop a small script which generate array of 5 random numbers
 
@@ -232,7 +232,7 @@ function randomArr () {
     }
 }
 randomArr()
-console.log(randArr)
+// console.log(randArr)
 
 //   14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
@@ -249,7 +249,7 @@ function uniqueArr () {
     } while (i < 5)
 }
 uniqueArr();
-console.log(uniArr)
+// console.log(uniArr)
 
 //   15. Develop a small script which generate a six characters random id:
   
