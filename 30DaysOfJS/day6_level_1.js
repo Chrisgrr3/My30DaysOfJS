@@ -235,8 +235,21 @@ randomArr()
 console.log(randArr)
 
 //   14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
-  
 
+let uniArr = [];
+function uniqueArr () {
+    let i = 0;
+    let rand;
+    do {
+        rand = parseInt(Math.random()*10)
+        if(!uniArr.includes(rand)) {
+            uniArr.push(rand)
+            i++
+        }
+    } while (i < 5)
+}
+uniqueArr();
+console.log(uniArr)
 
 //   15. Develop a small script which generate a six characters random id:
   
