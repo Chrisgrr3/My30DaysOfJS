@@ -24,10 +24,22 @@ const countries = [
   
   const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
+
+
 // 1. Develop a small script which generate any number of characters random id:
 
     //   fe3jo1gl124g
     //   xkqci4utda1lmbelpkm03rba
+
+function randomID(number) {
+    let result = '';
+    let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'
+    for (let i = 0; i < number; i++) {
+        result += characters.charAt(parseInt(Math.random()*characters.length))
+    }
+    console.log(result)
+}
+// randomID(45)
 
 
 
