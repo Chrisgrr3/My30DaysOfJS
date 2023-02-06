@@ -14,6 +14,7 @@ const countries = [
     'Kenya'
   ]
 
+  
 // 2. Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
 
 let copyArr = [];
@@ -40,8 +41,17 @@ const mernStack = [
 ].sort()
 console.log(webTechs, mernStack)
 
+
 // 4. Extract all the countries contain the word 'land' from the countries array and print it as array
 
+let landArray = []
+for(let i = 0; i < copyArr.length; i++) {
+    if(copyArr[i].includes('land')) {
+        landArray.push(copyArr[i])
+    }
+}
+console.log(copyArr);
+console.log(landArray);
 
 
 // 5. Find the country containing the hightest number of characters in the countries array
