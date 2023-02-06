@@ -196,6 +196,15 @@ console.log(fiveLetters);
 
 // 11. Find the longest word in the webTechs array
 
+maxLength = 0;
+maxIndex = 0;
+for(let i = 0; i < webTechs.length; i++) {
+    if(webTechs[i].length > maxLength) {
+        maxLength = webTechs[i].length;
+        maxIndex = i;
+    }
+}
+console.log(webTechs[maxIndex])
 
 
 // 12. Use the webTechs array to create the following array of arrays:
