@@ -16,6 +16,12 @@ const countries = [
 
 // 2. Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
 
+let copyArr = [];
+
+for(const el in countries) {
+    copyArr.push(countries[el])
+}
+copyArr.sort()
 
 
 // 3. Sort the webTechs array and mernStack array
