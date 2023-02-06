@@ -229,8 +229,15 @@ console.log(result)
 
 
 // 14. Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
-
-
+console.log()
+const techArray = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+for(let i = 0; i < techArray.length; i++) {
+    console.log(techArray[i])
+}
+console.log()
+for(const tech of techArray) {
+    console.log(tech)
+}
 
 // 15. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
 
