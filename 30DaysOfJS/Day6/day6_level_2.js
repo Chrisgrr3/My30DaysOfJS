@@ -185,6 +185,13 @@ console.log(countries[maxIndex])
 
     // ['Japan', 'Kenya']
 
+let fiveLetters = [];
+for(let i = 0; i < countries.length; i++) {
+    if(countries[i].length === 5) {
+        fiveLetters.push(countries[i])
+    }
+}
+console.log(fiveLetters);
 
 
 // 11. Find the longest word in the webTechs array
