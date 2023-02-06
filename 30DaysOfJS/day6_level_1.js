@@ -199,10 +199,9 @@ function hundredSum() {
 //   11. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
   
     //   The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
-
+let evenSum = 0;
+let oddSum = 0;
 function sumEvenOdd() {
-    let evenSum = 0;
-    let oddSum = 0;
     for (let i = 0; i <= 100; i++) {
         if(i % 2 == 0) {
             evenSum += i
@@ -211,6 +210,7 @@ function sumEvenOdd() {
         }
     }
     console.log(`The sum of all evens from 0 to 100 is ${evenSum}. And the sum of all odds from 0 to 100 is ${oddSum}.`)
+    return evenSum, oddSum;
 }
 sumEvenOdd()
 
@@ -218,7 +218,10 @@ sumEvenOdd()
   
 //     [2550, 2500]
 
-
+function evenOddArray () {
+    console.log([evenSum, oddSum])
+}
+evenOddArray()
 
 //   13. Develop a small script which generate array of 5 random numbers
   
