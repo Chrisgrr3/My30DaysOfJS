@@ -26,7 +26,19 @@ copyArr.sort()
 
 // 3. Sort the webTechs array and mernStack array
 
-
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ].sort()
+const mernStack = [
+    'MongoDB', 'Express', 'React', 'Node'
+].sort()
+console.log(webTechs, mernStack)
 
 // 4. Extract all the countries contain the word 'land' from the countries array and print it as array
 
