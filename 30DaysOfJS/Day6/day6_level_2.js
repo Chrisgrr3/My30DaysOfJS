@@ -42,18 +42,35 @@ function randomID(number) {
 // randomID(45)
 
 
-
 // 2. Write a script which generates a random hexadecimal number.
 
     // '#ee33df'
 
-
+function randomHex(length) {
+    let result = '';
+    let characters = 'abcdef1234567890'
+    for(let i = 0; i < length; i++) {
+        result += characters.charAt(parseInt(Math.random() * characters.length))
+    }
+    console.log(result)
+}
+randomHex(6)
 
 // 3. Write a script which generates a random rgb color number.
 
     // rgb(240,180,80)
 
-
+function randRGB() {
+    let vals = [];
+    for(let i = 0; i < 3; i++) {
+        vals.push(Math.floor(Math.random() * 255))
+    }
+    let r = vals[0];
+    let g = vals[1];
+    let b = vals[2];
+    console.log(`rgb(${r},${g},${b})`)
+}
+randRGB()
 
 // 4. Using the above countries array, create the following new array.
 
