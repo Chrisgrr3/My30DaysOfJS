@@ -122,7 +122,17 @@ for(let i = 0; i < countries.length; i++) {
     console.log(letter)
     countries[i] = letter + countries[i].substring(1, countries[i].length);
 }
+countries.push('Iceland') && countries.sort();
+
 console.log(countries)
+
+const myArr = [];
+for(let i = 0; i < countries.length; i++) {
+    myArr.push([countries[i], countries[i].substring(0,3).toUpperCase(), countries[i].length])
+}
+ console.log(myArr)
+
+
 
 
 // 7. In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
