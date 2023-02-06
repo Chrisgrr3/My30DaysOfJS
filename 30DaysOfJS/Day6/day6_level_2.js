@@ -114,6 +114,15 @@ console.log(newArr)
     //   ['Kenya', 'KEN', 5]
     // ]
 
+console.log(countries)
+
+for(let i = 0; i < countries.length; i++) {
+    countries[i] = countries[i].toLowerCase()
+    let letter = countries[i].charAt(0).toUpperCase();
+    console.log(letter)
+    countries[i] = letter + countries[i].substring(1, countries[i].length);
+}
+console.log(countries)
 
 
 // 7. In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
