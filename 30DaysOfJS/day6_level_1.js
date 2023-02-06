@@ -161,8 +161,27 @@ function odd100() {
 // odd100()
 
 //   9. Use for loop to iterate from 0 to 100 and print only prime numbers
-  
 
+function prime() {
+    let primeNumbers = [];
+
+    for (let i = 0; i <= 100; i++) {
+        let isPrime = true;
+
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            primeNumbers.push(i);
+        }
+    }
+    console.log(primeNumbers)
+}
+prime()
 
 //   10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 
