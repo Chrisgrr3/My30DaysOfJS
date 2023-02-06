@@ -90,6 +90,11 @@ console.log(countries)
 
     // [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
 
+let newArr = [];
+for(let i = 0; i < countries.length; i++) {
+    newArr.push(countries[i].length)
+}
+console.log(newArr)
 
 
 // 6. Use the countries array to create the following array of arrays:
