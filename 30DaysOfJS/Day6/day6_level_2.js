@@ -76,6 +76,14 @@ randRGB()
 
     // ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
 
+// console.log(countries.toString().toUpperCase().split(','))
+
+// or
+
+for(let i = 0; i < countries.length; i++) {
+    countries[i] = countries[i].toUpperCase()
+}
+console.log(countries)
 
 
 // 5. Using the above countries array, create an array for countries length'.
