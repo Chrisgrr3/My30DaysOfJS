@@ -170,6 +170,16 @@ if(iaArray.length === 0) {
 
     // Ethiopia
 
+let maxLength = 0;
+let maxIndex = 0;
+for(let i = 0; i < countries.length; i++) {
+    if(countries[i].length > maxLength) {
+        maxLength = countries[i].length;
+        maxIndex = i;
+    }
+}
+console.log(countries[maxIndex])
+
 
 // 10. Using the above countries array, find the country containing only 5 characters.
 
