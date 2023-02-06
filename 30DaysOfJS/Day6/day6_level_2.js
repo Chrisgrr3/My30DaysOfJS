@@ -239,8 +239,16 @@ for(const tech of techArray) {
     console.log(tech)
 }
 
+
 // 15. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
 
+let fruits = ['banana', 'orange', 'mango', 'lemon'];
+let temp = [];
+for(let i = fruits.length - 1; i >= 0; i--) {
+    temp.push(fruits[i]);
+}
+fruits = temp;
+console.log(fruits)
 
 
 // 16. Print all the elements of array as shown below.
