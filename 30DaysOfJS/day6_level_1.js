@@ -224,8 +224,15 @@ function evenOddArray () {
 evenOddArray()
 
 //   13. Develop a small script which generate array of 5 random numbers
-  
 
+let randArr = []
+function randomArr () {
+    for(let i = 0; i < 5; i++) {
+        randArr.push(parseInt(Math.random()*10));
+    }
+}
+randomArr()
+console.log(randArr)
 
 //   14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
   
