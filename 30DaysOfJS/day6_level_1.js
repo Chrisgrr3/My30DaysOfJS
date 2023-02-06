@@ -251,6 +251,17 @@ function uniqueArr () {
 uniqueArr();
 // console.log(uniArr)
 
-//   15. Develop a small script which generate a six characters random id:
+//   15. Develop a small script which generate a six characters random id in javascript:
   
     //   5j2khz
+
+function generateRandomID() {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
+
+    for(let i = 0; i <=5; i++) {
+        result += characters.charAt(parseInt(Math.random()*characters.length))
+    }
+    console.log(result);
+}
+generateRandomID();
