@@ -1,13 +1,16 @@
 // 1. Declare a function fullName and it print out your full name.
 
-function fullName(name) {
+function fName(name) {
     console.log(name)
 }
-fullName('Christopher Guerrero')
+fName('Christopher Guerrero')
 
 // 2. Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
 
-
+function fullName(firstName, lastName) {
+    console.log(firstName, lastName)
+}
+fullName('Christopher', 'Guerrero')
 
 // 3. Declare a function addNumbers and it takes two two parameters and it returns sum.
 
