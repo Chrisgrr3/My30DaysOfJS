@@ -5,6 +5,7 @@ function fName(name) {
 }
 fName('Christopher Guerrero')
 
+
 // 2. Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
 
 function fullName(firstName, lastName) {
@@ -12,9 +13,13 @@ function fullName(firstName, lastName) {
 }
 fullName('Christopher', 'Guerrero')
 
+
 // 3. Declare a function addNumbers and it takes two two parameters and it returns sum.
 
-
+function addNumbers(first, second) {
+    return first + second;
+}
+console.log(addNumbers(1,2))
 
 // 4. An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
 
