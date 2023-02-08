@@ -80,11 +80,14 @@ console.log(density(4, 8))
 
 
 
+
 // 11. Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
 
 
 
+
 // 12. Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+
 
 
 
@@ -97,7 +100,9 @@ console.log(density(4, 8))
 
 
 
+
 // 14. Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+
 
 
 
@@ -109,3 +114,5 @@ console.log(density(4, 8))
     // 0
 
 
+
+    
