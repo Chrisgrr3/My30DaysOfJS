@@ -42,6 +42,11 @@ console.log(perimeterOfRectangle(2,3))
 
 // 6. A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism.
 
+function volumeOfRectPrism (length, width, height) {
+    const volume = length * width * height
+    return volume
+}
+console.log(volumeOfRectPrism(2,4,6))
 
 
 // 7. Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
