@@ -103,3 +103,10 @@ for(let i = 0; i < countries.length; i++) {
 console.log(twoOrMore)
 
 // 9. Reverse the countries array and capitalize each country and stored it as an array
+
+let capArray = copyArr.reverse()
+for(let i = 0; i < copyArr.length; i++) {
+    capArray[i] = copyArr[i].charAt(0).toUpperCase() + copyArr[i].slice(1, copyArr.length)
+}
+
+console.log(capArray)
