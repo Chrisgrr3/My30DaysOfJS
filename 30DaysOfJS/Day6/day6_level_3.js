@@ -91,8 +91,15 @@ for(let i = 0; i < countries.length; i++) {
 console.log(fourArray)
 
 
-// 8. Extract all the countries containing two or more words from the countries array and print it as array
+// 8. Extract all the countries containing two or more letters from the countries array and print it as array
 
+let twoOrMore = [];
+for(let i = 0; i < countries.length; i++) {
+    if(countries[i].length >= 2) {
+        twoOrMore.push(countries[i])
+    }
+}
 
+console.log(twoOrMore)
 
 // 9. Reverse the countries array and capitalize each country and stored it as an array
