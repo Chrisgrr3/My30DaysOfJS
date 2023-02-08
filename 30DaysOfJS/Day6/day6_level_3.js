@@ -70,8 +70,14 @@ console.log(countries[maxIndex])
 
 // 6. Extract all the countries contain the word 'land' from the countries array and print it as array
 
+let landArr = [];
+for(let i = 0; i < countries.length; i++) {
+    if(countries[i].includes('land')) {
+        landArr.push(countries[i])
+    }
+}
 
-
+console.log(landArr)
 // 7. Extract all the countries containing only four characters from the countries array and print it as array
 
 
