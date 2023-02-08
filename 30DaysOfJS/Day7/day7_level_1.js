@@ -51,6 +51,11 @@ console.log(volumeOfRectPrism(2,4,6))
 
 // 7. Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
 
+function areaOfCircle(r) {
+    const area = Math.PI * r * r
+    return area
+}
+console.log(areaOfCircle(2))
 
 
 // 8. Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
