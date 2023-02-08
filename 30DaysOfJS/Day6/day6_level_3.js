@@ -67,6 +67,7 @@ for(let i = 0; i < countries.length; i++) {
 console.log(countries)
 console.log(countries[maxIndex])
 
+
 // 6. Extract all the countries contain the word 'land' from the countries array and print it as array
 
 
