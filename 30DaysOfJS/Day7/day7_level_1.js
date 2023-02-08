@@ -69,6 +69,11 @@ console.log(circumference(1))
 
 // 9. Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
 
+function density(mass, volume) {
+    const density = parseFloat(mass/volume);
+    return density
+}
+console.log(density(4, 8))
 
 
 // 10. Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
