@@ -78,6 +78,8 @@ for(let i = 0; i < countries.length; i++) {
 }
 
 console.log(landArr)
+
+
 // 7. Extract all the countries containing only four characters from the countries array and print it as array
 
 
