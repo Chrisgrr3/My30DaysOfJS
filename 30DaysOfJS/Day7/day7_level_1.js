@@ -21,8 +21,14 @@ function addNumbers(first, second) {
 }
 console.log(addNumbers(1,2))
 
+
 // 4. An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
 
+function rectangleArea(length, width) {
+    const area = length * width;
+    return area;
+}
+console.log(rectangleArea(2,4))
 
 
 // 5. A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle.
