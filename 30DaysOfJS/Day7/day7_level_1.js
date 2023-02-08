@@ -60,6 +60,11 @@ console.log(areaOfCircle(2))
 
 // 8. Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
 
+function circumference(r) {
+    const circumference = 2 * Math.PI * r;
+    return circumference;
+}
+console.log(circumference(1))
 
 
 // 9. Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
