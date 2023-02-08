@@ -33,6 +33,11 @@ console.log(rectangleArea(2,4))
 
 // 5. A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle.
 
+function perimeterOfRectangle(length, width) {
+    const perimeter = (2 * length) + (2 * width);
+    return perimeter;
+}
+console.log(perimeterOfRectangle(2,3))
 
 
 // 6. A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism.
