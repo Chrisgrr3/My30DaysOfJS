@@ -56,7 +56,16 @@ console.log(landArray);
 
 // 5. Find the country containing the hightest number of characters in the countries array
 
-
+let maxIndex = 0;
+let maxLength = 0;
+for(let i = 0; i < countries.length; i++) {
+    if(countries[i].length > countries[maxIndex].length) {
+        maxIndex = i;
+        maxLength = countries[i].length
+    }
+}
+console.log(countries)
+console.log(countries[maxIndex])
 
 // 6. Extract all the countries contain the word 'land' from the countries array and print it as array
 
