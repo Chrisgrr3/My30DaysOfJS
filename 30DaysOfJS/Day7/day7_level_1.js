@@ -87,7 +87,10 @@ console.log(speed(10, 5))
 
 // 11. Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
 
-
+function weight(mass, gravity) {
+    const weight = mass * gravity;
+    return weight
+}
 
 
 // 12. Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
