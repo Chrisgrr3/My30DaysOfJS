@@ -109,7 +109,7 @@ console.log(convertCelsiusToFahrenheit(0))
     // Obese: BMI is 30 or more
 
 function BMI(weight, height) {
-    const bmi = weight/(height * height)
+    const bmi = parseFloat(weight/(height * height))
     if(bmi < 18.5) {
         console.log('BMI is less than 18.5: Underweight')
         return bmi
@@ -123,7 +123,6 @@ function BMI(weight, height) {
         console.log('BMI is greater than 30: Obese')
         return bmi
     }
-
 }
 
 
