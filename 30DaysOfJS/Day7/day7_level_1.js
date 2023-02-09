@@ -115,7 +115,10 @@ function BMI(weight, height) {
         return bmi
     } else if (bmi >= 18.5 && bmi <= 24.9) {
         console.log('BMI is between 18.5 and 24.9: Normal weight')
-        return bmi;
+        return bmi
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        console.log('BMI is between 25 and 29.9: Overweight')
+        return bmi
     }
 
 }
