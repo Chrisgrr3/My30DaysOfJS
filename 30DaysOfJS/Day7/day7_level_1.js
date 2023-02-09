@@ -110,6 +110,10 @@ console.log(convertCelsiusToFahrenheit(0))
 
 function BMI(weight, height) {
     const bmi = weight/(height * height)
+    if(bmi < 18.5) {
+        console.log('BMI is less than 18.5: Underweight')
+        return bmi
+    }
 }
 
 
