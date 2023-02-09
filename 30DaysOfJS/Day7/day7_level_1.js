@@ -113,7 +113,11 @@ function BMI(weight, height) {
     if(bmi < 18.5) {
         console.log('BMI is less than 18.5: Underweight')
         return bmi
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        console.log('BMI is between 18.5 and 24.9: Normal weight')
+        return bmi;
     }
+
 }
 
 
