@@ -97,6 +97,7 @@ function weight(mass, gravity) {
 
 function convertCelsiusToFahrenheit(oC) {
     const oF = (oC * (9/5) + 32);
+    return oF;
 }
 
 
