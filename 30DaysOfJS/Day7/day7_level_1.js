@@ -119,6 +119,9 @@ function BMI(weight, height) {
     } else if (bmi >= 25 && bmi <= 29.9) {
         console.log('BMI is between 25 and 29.9: Overweight')
         return bmi
+    } else if (bmi >= 30) {
+        console.log('BMI is greater than 30: Obese')
+        return bmi
     }
 
 }
