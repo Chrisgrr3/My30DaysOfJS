@@ -128,7 +128,12 @@ function BMI(weight, height) {
 
 // 14. Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
 
-
+function checkSeason(month) {
+    if(month === 'December' || 'January' || 'February') {
+        return 'Winter'
+    }
+}
+console.log(checkSeason('February'))
 
 
 // 15. Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
