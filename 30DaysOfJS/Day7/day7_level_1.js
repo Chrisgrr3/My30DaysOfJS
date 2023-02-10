@@ -149,5 +149,15 @@ console.log(checkSeason('October'))
     // console.log(findMax(0, -10, -2))
     // 0
 
-
-
+function findMax(i, j, k) {
+    const maxArr = [i,j,k]
+    let maxVal = maxArr[0]
+    for(let i = 0; i < maxArr.length; i++) {
+        if(maxArr[i] > maxVal) {
+            maxVal = maxArr[i]
+        }
+    }
+    console.log(maxVal)
+    return maxVal;
+}
+findMax(-66,-8,-3)
