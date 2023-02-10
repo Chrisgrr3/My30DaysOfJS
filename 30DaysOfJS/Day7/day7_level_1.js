@@ -133,9 +133,11 @@ function checkSeason(month) {
         return 'Winter'
     } else if (month == 'March' || month == 'April' || month == 'May') {
         return 'Spring'
+    } else if (month == 'June' || month == 'July' || month == 'August') {
+        return 'Summer'
     }
 }
-console.log(checkSeason('March'))
+console.log(checkSeason('July'))
 
 
 // 15. Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
