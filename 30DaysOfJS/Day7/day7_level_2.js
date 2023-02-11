@@ -85,6 +85,15 @@ swapValues(1, 2)
     // console.log(reverseArray(['A', 'B', 'C']))
         //['C', 'B', 'A']
 
+function reverseArray(arr) {
+    let reverseArr = []
+    for(let i = arr.length - 1; i >= 0; i--) {
+        reverseArr.push(arr[i])
+    }
+    console.log(reverseArr)
+    return reverseArr;
+}
+reverseArray([1,2,3,5,7])
 
 
 // 7. Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
