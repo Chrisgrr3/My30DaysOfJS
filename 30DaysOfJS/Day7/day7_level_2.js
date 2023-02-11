@@ -1,7 +1,7 @@
 // 1. Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
 
 function solveLinEquation(a, b, c) {
-    
+
 }
 
 // 2. Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
@@ -13,7 +13,16 @@ function solveLinEquation(a, b, c) {
     // console.log(solveQuadratic(1, 0, -4)) //{2, -2}
     // console.log(solveQuadratic(1, -1, 0)) //{1, 0}
 
-
+function solveQuadEquation(a = 0, b = 0, c = 0) {
+    let x = (-b + Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)
+    let x2 = (-b - Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)
+    return `(${x}, ${x2})`
+}
+console.log(solveQuadEquation(1, 4, 4));
+console.log(solveQuadEquation(1, -1, -2));
+console.log(solveQuadEquation(1, 7, 12));
+console.log(solveQuadEquation(1, 0, -4));
+console.log(solveQuadEquation(1, -1, 0));
 
 // 3. Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
