@@ -49,15 +49,16 @@ printArray([1,2,4,5,7,43])
     // 08/01/2020 04:08
 
 function showDateTime() {
-    let today = new Date();
+    let now = new Date();
     let month = (function(n) {
         return n.getMonth()
-    })(today); // month(today)
+    })(now); // month(today)
     let date = n => {
         return n.getDate()
-    } // date(today)
-    let hour = h => h.getHours(); // hour(today)
-
+    } // date(now)
+    let hours = n => n.getHours(); // hours(now)
+    let minutes = n => n.getMinutes() // minutes(now)
+    
 }
 showDateTime()
 
