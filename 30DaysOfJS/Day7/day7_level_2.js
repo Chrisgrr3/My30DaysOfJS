@@ -14,6 +14,10 @@ function solveLinEquation(a, b, c) {
     // console.log(solveQuadratic(1, -1, 0)) //{1, 0}
 
 function solveQuadEquation(a = 0, b = 0, c = 0) {
+    if(a === 0) {
+        console.log('This is not a quadratic equation');
+        return 0;
+    }
     let x = (-b + Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)
     let x2 = (-b - Math.sqrt(Math.pow(b,2) - (4*a*c)))/(2*a)
     return `(${x}, ${x2})`
