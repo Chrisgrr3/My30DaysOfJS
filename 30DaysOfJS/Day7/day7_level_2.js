@@ -52,8 +52,12 @@ function showDateTime() {
     let today = new Date();
     let month = (function(n) {
         return n.getMonth()
-    })(today)
-    console.log(month)
+    })(today); // month(today)
+    let date = n => {
+        return n.getDate()
+    } // date(today)
+    let hour = h => h.getHours(); // hour(today)
+
 }
 showDateTime()
 
