@@ -42,11 +42,20 @@ function printArray(arr) {
 }
 printArray([1,2,4,5,7,43])
 
+
 // 4. Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
 
     // showDateTime()
     // 08/01/2020 04:08
 
+function showDateTime() {
+    let today = new Date();
+    let month = (function(n) {
+        return n.getMonth()
+    })(today)
+    console.log(month)
+}
+showDateTime()
 
 
 // 5. Declare a function name swapValues. This function swaps value of x to y.
