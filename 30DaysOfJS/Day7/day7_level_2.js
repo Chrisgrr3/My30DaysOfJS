@@ -51,7 +51,7 @@ printArray([1,2,4,5,7,43])
 function showDateTime() {
     let now = new Date();
     let month = (function(n) {
-        return n.getMonth()
+        return n.getMonth() + 1
     })(now); // month(today)
     let date = n => {
         return n.getDate()
@@ -61,7 +61,7 @@ function showDateTime() {
     let year = (function(n) {
         return n.getFullYear()
     })(now)
-    console.log(`${month}/${date}`) 
+    console.log(`${month < 10 ? '0' + month : month}/${date(now) < 10 ? '0' + date(now): date(now)}/${year} ${hours(now) < 10 ? '0' + hours(now) : hours(now)}:${minutes(now) < 10 ? '0' + minutes(now): minutes(now)}`) 
 }
 showDateTime()
 
