@@ -24,10 +24,10 @@ function solveQuadEquation(a = 0, b = 0, c = 0) {
     return `(${x}, ${x2})`
 }
 console.log(solveQuadEquation(1, 4, 4));
-console.log(solveQuadEquation(1, -1, -2));
-console.log(solveQuadEquation(1, 7, 12));
-console.log(solveQuadEquation(1, 0, -4));
-console.log(solveQuadEquation(1, -1, 0));
+// console.log(solveQuadEquation(1, -1, -2));
+// console.log(solveQuadEquation(1, 7, 12));
+// console.log(solveQuadEquation(1, 0, -4));
+// console.log(solveQuadEquation(1, -1, 0));
 
 
 // 3. Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
