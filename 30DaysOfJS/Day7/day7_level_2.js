@@ -32,7 +32,15 @@ console.log(solveQuadEquation(1, -1, 0));
 
 // 3. Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
 
-
+function printArray(arr) {
+    if(typeof arr != typeof []) {
+        console.log('Please input an array.')
+    }
+    for(let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+printArray([1,2,4,5,7,43])
 
 // 4. Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
 
