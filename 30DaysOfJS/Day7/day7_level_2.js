@@ -58,7 +58,10 @@ function showDateTime() {
     } // date(now)
     let hours = n => n.getHours(); // hours(now)
     let minutes = n => n.getMinutes() // minutes(now)
-    
+    let year = (function(n) {
+        return n.getFullYear()
+    })(now)
+    console.log(`${month}/${date}`) 
 }
 showDateTime()
 
