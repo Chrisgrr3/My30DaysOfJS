@@ -124,6 +124,11 @@ addItem('Cheese')
 
 // 9. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
 
+function removeItem(itemIndex) {
+    items.splice(itemIndex, 1)
+}
+removeItem(0);
+console.log(items)
 
 
 // 10. Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
