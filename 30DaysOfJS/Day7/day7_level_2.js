@@ -218,6 +218,16 @@ randomUserIp()
 
 // 16. Write a function which generates a randomMacAddress
 
+function randomMacAddress() {
+    const chars = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'A', 'B', 'C','D', 'E', 'F']
+    let macAddress = [];
+    for(let i = 0; i <= 5; i++) {
+        macAddress.push(`${chars[parseInt(Math.floor(Math.random() * chars.length))]}${chars[parseInt(Math.floor(Math.random() * chars.length))]}`)
+    }
+    macAddress = macAddress.join(':')
+    console.log(macAddress)
+}
+randomMacAddress()
 
 
 // 17. Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
