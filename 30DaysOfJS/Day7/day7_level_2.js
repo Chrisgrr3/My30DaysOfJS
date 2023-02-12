@@ -213,6 +213,7 @@ function randomUserIp() {
     console.log(randomIP)
     return randomIP;
 }
+randomUserIp()
 
 
 // 16. Write a function which generates a randomMacAddress
