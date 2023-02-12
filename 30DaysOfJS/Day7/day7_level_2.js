@@ -179,6 +179,17 @@ sumOfEven(4)
     // The number of odds are 50.
     // The number of evens are 51.
 
+function evensAndOdds(number) {
+    let evens = 0;
+    let odds = 0;
+    for(let i = 0; i <= number; i++) {
+        i % 2 == 0
+            ? evens++
+            : odds++
+    }
+    console.log(`The number of odds are ${odds}.\nThe number of evens are ${evens}.`)
+}
+evensAndOdds(100)
 
 
 // 14. Write a function which takes any number of arguments and return the sum of the arguments
