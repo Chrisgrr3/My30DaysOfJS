@@ -226,6 +226,7 @@ function randomMacAddress() {
     }
     macAddress = macAddress.join(':')
     console.log(macAddress)
+    return hexa;
 }
 randomMacAddress()
 
@@ -234,7 +235,16 @@ randomMacAddress()
     // console.log(randomHexaNumberGenerator());
     // '#ee33df'
 
-
+function randomHexaNumberGenerator() {
+    const chars = '1234567890abcdef';
+    let hexa = '#'
+    for(let i = 0; i <= 5; i++) {
+        hexa += (chars.charAt(Math.floor(Math.random() * chars.length)))
+    }
+    console.log(hexa)
+    return hexa;
+}
+randomHexaNumberGenerator()
 
 // 18. Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
     // console.log(userIdGenerator());
