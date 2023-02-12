@@ -109,6 +109,7 @@ function capitalizeArray(arr) {
 }
 capitalizeArray(['hi', 'hello','dude'])
 
+
 // 8. Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
 
 
