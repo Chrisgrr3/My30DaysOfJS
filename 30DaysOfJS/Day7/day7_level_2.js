@@ -209,7 +209,8 @@ sumArgs(1,4,5)
 // 15. Write a function which generates a randomUserIp.
 
 function randomUserIp() {
-    
+    let randomIP = `${Math.random() * 255}.${Math.random()*255}.${Math.random()*255}.${Math.random()*255}`
+    console.log(randomIP)
 }
 
 
