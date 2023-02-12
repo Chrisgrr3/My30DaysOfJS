@@ -98,9 +98,16 @@ reverseArray([1,2,3,5,7])
 
 // 7. Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
-function capitalizeArray() {
-    
+function capitalizeArray(arr) {
+    let capitalized;
+    const capitalizedArray = [];
+    for(let i = 0; i < arr.length; i++) {
+        capitalized = arr[i].charAt(0).toUpperCase()
+        capitalizedArray.push(capitalized.concat(arr[i].slice(1, arr[i].length)))
+    }
+    console.log(capitalizedArray)
 }
+capitalizeArray(['hi', 'hello','dude'])
 
 // 8. Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
 
