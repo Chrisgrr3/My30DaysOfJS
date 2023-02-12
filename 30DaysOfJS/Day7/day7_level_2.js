@@ -147,6 +147,17 @@ sumOfNumbers(1)
 
 // 11. Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
 
+function sumOfOdds(number) {
+    let sum = 0
+    for(let i = 0; i <= number; i++) {
+        if(i % 2 != 0) {
+            sum += i;
+        }
+    }
+    console.log(sum)
+}
+sumOfOdds(2)
+sumOfOdds(10)
 
 
 // 12. Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
