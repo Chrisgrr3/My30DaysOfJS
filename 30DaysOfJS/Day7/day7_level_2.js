@@ -196,7 +196,10 @@ evensAndOdds(100)
     // sum(1, 2, 3) // -> 6
     // sum(1, 2, 3, 4) // -> 10
 
-
+const sumArgs = (...args) => {
+    
+}
+sumArgs(1,4,5)
 
 // 15. Write a function which generates a randomUserIp.
 
