@@ -197,7 +197,11 @@ evensAndOdds(100)
     // sum(1, 2, 3, 4) // -> 10
 
 const sumArgs = (...args) => {
-    
+    let sum = 0;
+    for(let i = 0; i < args.length; i++) {
+        sum += args[i];
+    }
+    console.log(sum)
 }
 sumArgs(1,4,5)
 
