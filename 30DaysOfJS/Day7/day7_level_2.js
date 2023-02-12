@@ -133,6 +133,16 @@ console.log(items)
 
 // 10. Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
 
+function sumOfNumbers(number) {
+    let sum = 0;
+    for(let i = 0; i <= number; i++) {
+        sum += i;
+    }
+    console.log(sum)
+}
+sumOfNumbers(3)
+sumOfNumbers(100)
+sumOfNumbers(1)
 
 
 // 11. Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
