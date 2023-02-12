@@ -208,6 +208,9 @@ sumArgs(1,4,5)
 
 // 15. Write a function which generates a randomUserIp.
 
+function randomUserIp() {
+    
+}
 
 
 // 16. Write a function which generates a randomMacAddress
