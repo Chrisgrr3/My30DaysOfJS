@@ -112,6 +112,14 @@ capitalizeArray(['hi', 'hello','dude'])
 
 // 8. Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
 
+let items = []
+function addItem(item) {
+    items.push(item)
+    console.log(items)
+    return items;
+}
+addItem('Cereal')
+addItem('Cheese')
 
 
 // 9. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
