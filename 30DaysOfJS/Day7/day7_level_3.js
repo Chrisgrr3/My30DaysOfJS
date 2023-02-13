@@ -45,7 +45,7 @@ function rgbColorGenerator() {
     console.log(rgb)
     return rgb;
 }
-rgbColorGenerator()
+// rgbColorGenerator()
 
 
 // 3. Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
@@ -65,8 +65,8 @@ function arrayOfHexaColors(numberOfColors) {
     }
     console.log(hexArr)
 }
-arrayOfHexaColors(2)
-arrayOfHexaColors(5)
+// arrayOfHexaColors(2)
+// arrayOfHexaColors(5)
 
 
 // 4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
@@ -78,8 +78,8 @@ function arrayOfRgbColors(numberOfEls) {
     }
     console.log(resultArr)
 }
-arrayOfRgbColors(1)
-arrayOfRgbColors(3)
+// arrayOfRgbColors(1)
+// arrayOfRgbColors(3)
 
 // 5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
    
@@ -98,11 +98,19 @@ function convertHexaToRgb(hex) {
     console.log(result)
     return result;
 }
-convertHexaToRgb('a80850')
-convertHexaToRgb('212a42')
+// convertHexaToRgb('a80850')
+// convertHexaToRgb('212a42')
 
 // 6. Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
+function convertRgbToHexa(r,g,b) {
+    let rgbArray = [r,g,b];
+    for(let i = 0; i < rgbArray.length; i++) {
+        rgbArray[i] = parseInt(rgbArray[i], 2)
+    }
+    console.log(rgbArray)
+}
+convertHexaToRgb(33,42,66)
 
 
 // 7. Write a function generateColors which can generate any number of hexa or rgb colors.
