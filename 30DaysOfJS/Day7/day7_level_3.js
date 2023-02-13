@@ -49,6 +49,10 @@ rgbColorGenerator()
 
 // 3. Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
 
+function arrayOfHexaColors(numberOfColors) {
+    let hexArr = []
+    const hexes = `1234567890ABCDEF`
+}
 
 
 // 4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
