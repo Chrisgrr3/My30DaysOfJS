@@ -90,7 +90,11 @@ function convertHexaToRgb(hex) {
         colors.push(hex.slice(start, start + 2))
         start += 2
     }
-    
+    let rgbArray = []
+    for(let i = 0; i < colors.length; i++) {
+        rgbArray.push(parseInt(colors[i], 16))
+    }
+    console.log(rgbArray)
 }
 convertHexaToRgb('a80850')
 
