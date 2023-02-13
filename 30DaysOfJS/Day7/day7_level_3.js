@@ -144,6 +144,18 @@ generateColors('HeXA', 1)
 
 // 8. Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
 
+function shuffleArray(arr) {
+    let randomIndex = Math.floor(Math.random() * arr.length)
+    let temp
+    for(let i = 0; i < arr.length; i++) {
+        temp = arr[i];
+        arr[i] = arr[randomIndex];
+        arr[randomIndex] = temp;
+        randomIndex = Math.floor(Math.random() * arr.length)
+    }
+    console.log(arr)
+}
+shuffleArray([1,2,3,4,5,6,7,8,9])
 
 
 // 9. Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
