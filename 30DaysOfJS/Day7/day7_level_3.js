@@ -82,7 +82,10 @@ arrayOfRgbColors(1)
 arrayOfRgbColors(3)
 
 // 5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+   
+function convertHexaToRgb(hex) {
 
+}
 
 
 // 6. Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
