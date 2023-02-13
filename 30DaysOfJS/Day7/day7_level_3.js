@@ -40,6 +40,11 @@ function userIdGeneratedByUser() {
     // rgbColorGenerator()
     // rgb(125,244,255)
 
+function rgbColorGenerator() {
+    let rgb = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
+    console.log(rgb)
+}
+rgbColorGenerator()
 
 
 // 3. Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
