@@ -14,7 +14,9 @@
     // UbGxOFI7UXSWAyKN
     // dIV0SSUTgAdKwStr
     // '
-
+function userIdGeneratedByUser() {
+    
+}
 
 
 // 2. Write a function name rgbColorGenerator and it generates rgb colors.
