@@ -108,7 +108,9 @@ function convertRgbToHexa(r,g,b) {
     for(let i = 0; i < rgbArray.length; i++) {
         rgbArray[i] = rgbArray[i].toString(16)
     }
-    console.log(rgbArray)
+    let result = `#${rgbArray.join('')}`
+    console.log(result)
+    return result
 }
 convertRgbToHexa(133,96,111)
 
