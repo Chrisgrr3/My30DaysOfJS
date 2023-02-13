@@ -64,6 +64,7 @@ function arrayOfHexaColors(numberOfColors) {
         i++;
     }
     console.log(hexArr)
+    return hexArr
 }
 // arrayOfHexaColors(2)
 // arrayOfHexaColors(5)
@@ -77,6 +78,7 @@ function arrayOfRgbColors(numberOfEls) {
         resultArr.push(rgbColorGenerator())
     }
     console.log(resultArr)
+    return resultArr;
 }
 // arrayOfRgbColors(1)
 // arrayOfRgbColors(3)
@@ -121,6 +123,18 @@ convertRgbToHexa(133,96,111)
     // console.log(generateColors('rgb', 3)) // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
     // console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
 
+function generateColors(type, amount) {
+    let result = []
+    if(type.toLowerCase() === 'hexa') {
+        result.push(arrayOfHexaColors(amount))
+    } else if(type.toLowerCase() === 'rgb') {
+        result.push(arrayOfRgbColors(amount));
+    } else {
+        console.log(`${type} is not a valid color format.`)
+    }
+    console.log(result)
+}
+generateColors('hexa', 1)
 
 
 // 8. Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
