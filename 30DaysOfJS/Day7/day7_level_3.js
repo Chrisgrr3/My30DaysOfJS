@@ -84,9 +84,17 @@ arrayOfRgbColors(3)
 // 5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
    
 function convertHexaToRgb(hex) {
-
+    let colors = [];
+    let start = 0
+    for(let i = 0; i <= 2; i++) {
+        colors.push(hex.slice(start, start + 2))
+        start += 2
+    }
+    
 }
+convertHexaToRgb('a80850')
 
+//'a80850'
 
 // 6. Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
