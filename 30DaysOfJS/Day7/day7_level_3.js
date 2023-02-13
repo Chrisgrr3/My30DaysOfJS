@@ -106,11 +106,11 @@ function convertHexaToRgb(hex) {
 function convertRgbToHexa(r,g,b) {
     let rgbArray = [r,g,b];
     for(let i = 0; i < rgbArray.length; i++) {
-        rgbArray[i] = parseInt(rgbArray[i], 2)
+        rgbArray[i] = rgbArray[i].toString(16)
     }
     console.log(rgbArray)
 }
-convertHexaToRgb(33,42,66)
+convertRgbToHexa(133,96,111)
 
 
 // 7. Write a function generateColors which can generate any number of hexa or rgb colors.
