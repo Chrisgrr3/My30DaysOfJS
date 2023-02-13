@@ -14,6 +14,7 @@
     // UbGxOFI7UXSWAyKN
     // dIV0SSUTgAdKwStr
     // '
+    
 function userIdGeneratedByUser() {
     const numberOfChars = prompt(`Please input the number of characters the user ID should be:`)
     const numberOfIds = prompt(`How many ID's would you like to generate?`)
@@ -29,7 +30,9 @@ function userIdGeneratedByUser() {
         tempString = '';
         i++;
     }
-    console.log(ids)
+    let result = ids.join(`\n`)
+    console.log(result)
+    return result;
 }
 
 
