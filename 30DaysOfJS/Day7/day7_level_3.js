@@ -43,6 +43,7 @@ function userIdGeneratedByUser() {
 function rgbColorGenerator() {
     let rgb = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
     console.log(rgb)
+    return rgb;
 }
 rgbColorGenerator()
 
