@@ -42,7 +42,7 @@ function userIdGeneratedByUser() {
 
 function rgbColorGenerator() {
     let rgb = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
-    console.log(rgb)
+    // console.log(rgb)
     return rgb;
 }
 // rgbColorGenerator()
@@ -131,10 +131,15 @@ function generateColors(type, amount) {
         result = arrayOfRgbColors(amount)
     } else {
         console.log(`${type} is not a valid color format.`)
+        return -1;
     }
     console.log(result)
+    return result;
 }
-generateColors('hexa', 1)
+generateColors('hexa', 5)
+generateColors('RgB', 3)
+generateColors('rbg', 2)
+generateColors('HeXA', 1)
 
 
 // 8. Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
