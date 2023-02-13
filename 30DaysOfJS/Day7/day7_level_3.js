@@ -94,7 +94,9 @@ function convertHexaToRgb(hex) {
     for(let i = 0; i < colors.length; i++) {
         rgbArray.push(parseInt(colors[i], 16))
     }
-    console.log(rgbArray)
+    let result = `rgb(${rgbArray.join(',')})`
+    console.log(result)
+    return result;
 }
 convertHexaToRgb('a80850')
 
