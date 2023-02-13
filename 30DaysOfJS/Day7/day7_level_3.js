@@ -99,8 +99,7 @@ function convertHexaToRgb(hex) {
     return result;
 }
 convertHexaToRgb('a80850')
-
-//'a80850'
+convertHexaToRgb('212a42')
 
 // 6. Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 
