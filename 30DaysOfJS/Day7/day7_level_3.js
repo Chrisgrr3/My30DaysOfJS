@@ -63,7 +63,7 @@ function arrayOfHexaColors(numberOfColors) {
         tempString = ''
         i++;
     }
-    console.log(hexArr)
+    // console.log(hexArr)
     return hexArr
 }
 // arrayOfHexaColors(2)
@@ -77,7 +77,7 @@ function arrayOfRgbColors(numberOfEls) {
     for(let i = 0; i < numberOfEls; i++) {
         resultArr.push(rgbColorGenerator())
     }
-    console.log(resultArr)
+    // console.log(resultArr)
     return resultArr;
 }
 // arrayOfRgbColors(1)
@@ -124,11 +124,11 @@ convertRgbToHexa(133,96,111)
     // console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
 
 function generateColors(type, amount) {
-    let result = []
+    let result;
     if(type.toLowerCase() === 'hexa') {
-        result.push(arrayOfHexaColors(amount))
+        result = arrayOfHexaColors(amount)
     } else if(type.toLowerCase() === 'rgb') {
-        result.push(arrayOfRgbColors(amount));
+        result = arrayOfRgbColors(amount)
     } else {
         console.log(`${type} is not a valid color format.`)
     }
