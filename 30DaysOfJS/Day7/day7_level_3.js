@@ -71,7 +71,15 @@ arrayOfHexaColors(5)
 
 // 4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
 
-
+function arrayOfRgbColors(numberOfEls) {
+    let resultArr = [];
+    for(let i = 0; i < numberOfEls; i++) {
+        resultArr.push(rgbColorGenerator())
+    }
+    console.log(resultArr)
+}
+arrayOfRgbColors(1)
+arrayOfRgbColors(3)
 
 // 5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
