@@ -51,8 +51,21 @@ rgbColorGenerator()
 
 function arrayOfHexaColors(numberOfColors) {
     let hexArr = []
-    const hexes = `1234567890ABCDEF`
+    const hexes = `1234567890abcdef`
+    let i = 1;
+    let tempString = '';
+    while(i <= numberOfColors) {
+        for(let j = 0; j < 6; j++) {
+            tempString += hexes.charAt(Math.floor(Math.random() * hexes.length))
+        }
+        hexArr.push(tempString)
+        tempString = ''
+        i++;
+    }
+    console.log(hexArr)
 }
+arrayOfHexaColors(2)
+arrayOfHexaColors(5)
 
 
 // 4. Write a function arrayOfRgbColors which return any number of RGB colors in an array.
