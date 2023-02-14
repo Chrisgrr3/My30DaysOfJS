@@ -294,6 +294,20 @@ uniqueArr([1,5,8])
 
 // 17. Write a function which checks if all the items of the array are the same data type.
 
+function sameDateTypes(arr) {
+    let type = typeof arr[0]
+    for(let i = 0; i < arr.length; i++) {
+        if(typeof arr[i] != typeof type) {
+            console.log('Not all values in the array are the same data type.')
+            return false;
+        }
+    }
+    console.log('All values in the array are the same data type.')
+    return true;
+}
+sameDateTypes(['Taco', 2, 3, 'Guacamole'])
+sameDateTypes(1,2,3,4)
+
 
 
 // 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
