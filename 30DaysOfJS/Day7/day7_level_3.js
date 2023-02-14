@@ -201,6 +201,19 @@ sum(1,2,3,4,5)
 
 // 12. Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
 
+function sumOfArrayItems(arr) {
+    let sum = 0
+    for(let i = 0; i < arr.length; i++) {
+        if(typeof arr[i] != typeof 1) {
+            console.log(`${arr[i]} is not of the number type.`)
+        } else {
+            sum += arr[i]
+        }
+    }
+    console.log(sum)
+}
+sumOfArrayItems([1,2,3,1])
+
 
 
 // 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
