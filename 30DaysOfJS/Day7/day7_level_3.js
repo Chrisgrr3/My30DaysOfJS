@@ -279,6 +279,17 @@ isPrime(7)
 
 // 16. Write a functions which checks if all items are unique in the array.
 
+function uniqueArr(arr) {
+    let arrSet = new Set(arr);
+    console.log(arrSet)
+    if(arrSet.size == arr.length) {
+        console.log('All items in the array are unique.')
+    } else {
+        console.log('Not all items in the array are unique.')
+    }
+}
+uniqueArr([1,2,3,4,5,6,6])
+uniqueArr([1,5,8])
 
 
 // 17. Write a function which checks if all the items of the array are the same data type.
