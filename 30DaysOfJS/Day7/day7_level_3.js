@@ -257,6 +257,24 @@ modifyArray([1,2,3,4,'hello'])
 
 // 15. Write a function called isPrime, which checks if a number is prime number.
 
+function isPrime(number) {
+    if(number == 1) {
+        console.log(`${number} is a prime number.`)
+        return true
+    }
+    for(let i = 2; i < number; i++) {
+        if(number % i === 0) {
+            console.log(`${number} is not a prime number.`)
+            return false
+        }
+    }
+    console.log(`${number} is a prime number.`)
+    return true
+}
+isPrime(1)
+isPrime(2)
+isPrime(9)
+isPrime(7)
 
 
 // 16. Write a functions which checks if all items are unique in the array.
