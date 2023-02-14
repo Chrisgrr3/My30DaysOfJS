@@ -331,12 +331,12 @@ isValidVariable('*power')
     // [(1, 4, 5, 7, 9, 8, 0)]
 
 function sevenRandomNumbers() {
-    let randomNumbers = [];
+    let randomNumbers = new Set();
     let rand;
-    while(randomNumbers.length < 7) {
+    while(randomNumbers.size < 7) {
         rand = Math.floor(Math.random() * 10);
-        if(!randomNumbers.includes(rand)) {
-            randomNumbers.push(rand);
+        if(!randomNumbers.has(rand)) {
+            randomNumbers.add(rand);
         }
     }
     console.log(randomNumbers)
