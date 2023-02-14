@@ -215,9 +215,24 @@ function sumOfArrayItems(arr) {
 sumOfArrayItems([1,2,3,1])
 
 
-
 // 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
 
+function average(arr) {
+    let average = 0;
+    let validInts = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if(typeof arr[i] != typeof 1) {
+            console.log(`${arr[i]} is not of the number type.`)
+        } else {
+            validInts ++;
+            average += arr[i]
+        }
+    }
+    average /= validInts;
+    console.log(`Average: ${average}`)
+}
+average([3,3,4,'hi'])
+average([-1,-4,3,-10,5,1.6,4.8])
 
 
 // 14. Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
