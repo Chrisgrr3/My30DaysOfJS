@@ -243,6 +243,16 @@ average([-1,-4,3,-10,5,1.6,4.8])
     // console.log(modifyArray(['Google', 'Facebook','Apple', 'Amazon']);
     //   'Not Found'
 
+function modifyArray(arr) {
+    if(arr.length < 5) {
+        console.log('Not Found')
+        return;
+    }
+    arr[4] = arr[4].toUpperCase()
+    console.log(arr)
+    return;
+}
+modifyArray([1,2,3,4,'hello'])
 
 
 // 15. Write a function called isPrime, which checks if a number is prime number.
