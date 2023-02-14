@@ -309,7 +309,6 @@ sameDateTypes(['Taco', 2, 3, 'Guacamole'])
 sameDateTypes(1,2,3,4)
 
 
-
 // 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
 
