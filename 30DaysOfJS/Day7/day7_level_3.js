@@ -161,8 +161,15 @@ shuffleArray([1,2,3,4,5,6,7,8,9])
 // 9. Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 
 function factorial(number) {
-    
+    let product = 1
+    for(let i = 1; i <= number; i++) {
+        product *= i
+    }
+    console.log(product)
+    return product;
 }
+factorial(4)
+
 
 // 10. Call your function isEmpty, it takes a parameter and it checks if it is empty or not
 
