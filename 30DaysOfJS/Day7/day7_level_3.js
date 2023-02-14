@@ -173,6 +173,18 @@ factorial(4)
 
 // 10. Call your function isEmpty, it takes a parameter and it checks if it is empty or not
 
+function isEmpty(obj) {
+    if(obj.length === 0) {
+        console.log(true)
+        return true
+    } else {
+        console.log(false)
+        return false
+    }
+}
+isEmpty('')
+isEmpty([1])
+
 
 
 // 11. Call your function sum, it takes any number of arguments and it returns the sum.
