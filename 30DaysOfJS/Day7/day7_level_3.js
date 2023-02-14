@@ -313,8 +313,17 @@ sameDateTypes(1,2,3,4)
 
 function isValidVariable(variable) {
     let chars = '~`!@#%^&*()-+={}[]|\\/:;"\'<>,.?'
+    for(let i = 0; i < chars.length; i++) {
+        if(variable.includes(chars.charAt(i))) {
+            console.log(`${variable} is not a valid variable name.`)
+            return false;
+        }
+    }
+    console.log(`${variable} is a valid variable name.`)
+    return true
 }
-
+isValidVariable('tree')
+isValidVariable('*power')
 
 // 19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
     // sevenRandomNumbers()
