@@ -330,8 +330,17 @@ isValidVariable('*power')
     // [(1, 4, 5, 7, 9, 8, 0)]
 
 function sevenRandomNumbers() {
-    
+    let randomNumbers = [];
+    let rand;
+    while(randomNumbers.length < 7) {
+        rand = Math.floor(Math.random() * 10);
+        if(!randomNumbers.includes(rand)) {
+            randomNumbers.push(rand);
+        }
+    }
+    console.log(randomNumbers)
+    return randomNumbers
 }
-
+sevenRandomNumbers()
 
 // 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
