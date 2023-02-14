@@ -186,9 +186,17 @@ isEmpty('')
 isEmpty([1])
 
 
-
 // 11. Call your function sum, it takes any number of arguments and it returns the sum.
 
+function sum() {
+    let sum = 0
+    for(let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    console.log(sum)
+    return sum
+}
+sum(1,2,3,4,5)
 
 
 // 12. Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
