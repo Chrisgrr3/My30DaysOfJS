@@ -34,3 +34,9 @@ console.log(dog.bark())
 
 
 // 5. Set new properties the dog object: breed, getDogInfo
+
+dog.breed = ['bichon freese', 'poodle']
+dog.getDogInfo = function() {
+    return `Name: ${this.name} | Color: ${this.color} | Age: ${this.age}`
+}
+console.log(dog.getDogInfo())
