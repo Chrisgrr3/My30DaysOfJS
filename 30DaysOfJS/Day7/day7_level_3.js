@@ -346,3 +346,14 @@ sevenRandomNumbers()
 
 
 // 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
+function reverseCountries(arr) {
+    let copyArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        copyArr.push(arr[i])
+    }
+    console.log(copyArr)
+    arr = arr.reverse()
+    console.log(arr)
+}
+reverseCountries(['Australia', 'China', 'Canada'])
