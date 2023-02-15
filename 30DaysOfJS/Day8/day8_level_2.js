@@ -52,6 +52,28 @@ const users = {
 
 // 1. Find the person who has many skills in the users object.
 
+function mostSkills() {
+    const keys = Object.keys(users)
+
+    let name;
+
+    let userWithMostSkills = users[keys[0]]
+    // console.log(userWithMostSkills)
+
+    let numberOfSkills = users[keys[0]].skills.length
+    // console.log(numberOfSkills)
+
+    for(let index in keys) {
+        if(users[keys[index]].skills.length > numberOfSkills) {
+            name = keys[index]
+            userWithMostSkills = users[keys[index]]
+            numberOfSkills = users[keys[index]].skills.length
+        }
+    }
+    console.log(`The user with the most skills is ${name}. He has ${numberOfSkills} skills.`)
+}
+
+mostSkills()
 
 
 // 2. Count logged in users, count users having greater than equal to 50 points from the following object.
