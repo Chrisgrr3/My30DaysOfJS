@@ -94,6 +94,23 @@ console.log(numberOfLogins())
 
 // 3. Find people who are MERN stack developer from the users object
 
+function mernStack() {
+    const keys = Object.keys(users)
+    let thisUsersSkills;
+    const mernDevs = [];
+
+    for(let key in keys) {
+        thisUsersSkills = users[keys[key]].skills
+
+        if(thisUsersSkills.includes('MongoDB','Express','React','Node')) {
+            mernDevs.push(keys[key])
+        }
+    }
+    console.log(mernDevs)
+    return mernDevs;
+}
+
+mernStack()
 
 
 // 4. Set your name in the users object without modifying the original users object
