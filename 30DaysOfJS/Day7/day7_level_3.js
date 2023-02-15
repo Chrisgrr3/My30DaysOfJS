@@ -357,3 +357,4 @@ function reverseCountries(arr) {
     console.log(arr)
 }
 reverseCountries(['Australia', 'China', 'Canada'])
+
