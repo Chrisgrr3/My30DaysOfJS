@@ -1,6 +1,9 @@
 // 1. Create an empty object called dog
 
+const dog = {
 
+}
+console.log(typeof dog)
 
 // 2. Print the the dog object on the console
 
