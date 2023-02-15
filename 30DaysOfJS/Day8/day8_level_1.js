@@ -5,8 +5,10 @@ const dog = {
 }
 console.log(typeof dog)
 
-// 2. Print the the dog object on the console
 
+// 2. Print the dog object on the console
+
+console.log(dog)
 
 
 // 3. Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
