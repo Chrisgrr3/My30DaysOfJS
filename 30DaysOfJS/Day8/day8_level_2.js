@@ -78,6 +78,18 @@ mostSkills()
 
 // 2. Count logged in users, count users having greater than equal to 50 points from the following object.
 
+function numberOfLogins() {
+    const keys = Object.keys(users)
+    let count = 0;
+    for(let key in keys) {
+        if(users[keys[key]].isLoggedIn) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(numberOfLogins())
 
 
 // 3. Find people who are MERN stack developer from the users object
