@@ -1,7 +1,8 @@
-// Find the person who has many skills in the users object.
+// 1. Find the person who has many skills in the users object.
 
-// Count logged in users, count users having greater than equal to 50 points from the following object.
 
+
+// 2. Count logged in users, count users having greater than equal to 50 points from the following object.
 // const users = {
 //   Alex: {
 //     email: 'alex@alex.com',
@@ -53,12 +54,23 @@
 //     points: 40
 //   }
 // }```
-// Find people who are MERN stack developer from the users object
 
-// Set your name in the users object without modifying the original users object
 
-// Get all keys or properties of users object
 
-// Get all the values of users object
+// 3. Find people who are MERN stack developer from the users object
 
-// Use the countries object to print a country name, capital, populations and languages.
+
+
+// 4. Set your name in the users object without modifying the original users object
+
+
+
+// 5. Get all keys or properties of users object
+
+
+
+// 6. Get all the values of users object
+
+
+
+// 7. Use the countries object to print a country name, capital, populations and languages.
