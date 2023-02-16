@@ -215,12 +215,29 @@ function rateProduct(productId, userEmail, rating) {
     products[productIndex]['ratings'].push({userId: users[userIndex]._id, rate: rating})
     console.log(products[productIndex]['ratings'])
 }
-rateProduct('hedfcg', 'chrisgrr3@gmail.com', 5)
+rateProduct('hedfcg', 'chrisgrr3@gmail.com', 4)
 
 
     // b. Create a function called averageRating which calculate the average rating of a product
 
-    
+function averageRating(productId) {
+    let productIndex;
+    let sum = 0
+    let count = 0
+    for(let i = 0; i < products.length; i++) {
+        if(products[i]._id == productId) {
+            productIndex = i;
+        }
+    }
+    products[productIndex]['ratings'].forEach(function(el) {
+        sum += el.rate;
+        count ++;
+    })
+    const average = parseFloat(sum / count);
+    console.log(average)
+}
+averageRating('hedfcg')
+
 
 // 4. Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 
