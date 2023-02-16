@@ -224,10 +224,17 @@ function averageRating(productId) {
     let productIndex;
     let sum = 0
     let count = 0
+    let productExists = false;
+
     for(let i = 0; i < products.length; i++) {
         if(products[i]._id == productId) {
             productIndex = i;
+            productExists = true
         }
+    }
+    if(productExists == false) {
+        console.log('The mentioned product doesn\'t exist. Please input a valid product id.')
+        return -1;
     }
     products[productIndex]['ratings'].forEach(function(el) {
         sum += el.rate;
