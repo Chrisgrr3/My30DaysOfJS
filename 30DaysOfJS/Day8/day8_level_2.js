@@ -146,3 +146,11 @@ console.log(values)
 
 
 // 7. Use the countries object to print a country name, capital, populations and languages.
+
+function printCountries() {
+    for(let country in countries) {
+        console.log(`Country Name: ${countries[country].name} | Capital: ${countries[country].capital} | Population: ${countries[country].population} | Languages: ${countries[country].languages.join(', ')}`)
+    }
+}
+printCountries()
+
