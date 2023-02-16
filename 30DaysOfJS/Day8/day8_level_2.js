@@ -1,3 +1,5 @@
+const { countries } = require("./countries");
+
 const users = {
     Alex: {
       email: 'alex@alex.com',
