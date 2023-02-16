@@ -133,6 +133,8 @@ console.log(copyUsers)
 
 // 5. Get all keys or properties of users object
 
+const entries = Object.entries(users)
+console.log(entries)
 
 
 // 6. Get all the values of users object
