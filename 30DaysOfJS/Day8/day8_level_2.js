@@ -139,6 +139,8 @@ console.log(entries)
 
 // 6. Get all the values of users object
 
+const values = Object.values(users)
+console.log(values)
 
 
 // 7. Use the countries object to print a country name, capital, populations and languages.
