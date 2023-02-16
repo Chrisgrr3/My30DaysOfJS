@@ -1,6 +1,40 @@
 // 1. Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
 
+const personAccount = {
+    firstName,
+    lastName,
+    incomes : [
+        {
+            income,
+            description
+        }
+    ],
+    expenses : [
+        {
+            income,
+            description
+        }
+    ],
+    totalIncome : function() {
 
+    },
+    totalExpense: function() {
+
+    },
+    accountInfo: function() {
+
+    },
+    addIncome: function() {
+
+    },
+    addExpense: function() {
+
+    },
+    accountBalance: function() {
+
+    }
+
+}
 
 // ** Questions:2, 3 and 4 are based on the following two arrays:users and products ()
     const users = [
