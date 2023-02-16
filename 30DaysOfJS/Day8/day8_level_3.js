@@ -117,7 +117,11 @@ const personAccount = {
 console.log(users)
 function signUp(email, userName, password) {
     let userExists = false;
+
     const chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
+
+    let date = new Date();
+    let dateString = `${date.getMonth()}/${date.getDate()}/${date.getFullYear} ${date.getHours}:${date.getMinutes()}`
 
     for(let i = 0; i < users.length; i++) {
         if(users[i].email.toLowerCase() == email.toLowerCase()) {
@@ -130,15 +134,19 @@ function signUp(email, userName, password) {
         let newUser = {
             _id: (function(letters) {
                 let result = ''
-                let length = 6
-                let start = 1
                 for(let i = 0; i < 6; i++) {
                     result += letters.charAt(Math.floor(Math.random() * letters.length))
                 }
+                return result;
             })(chars),
-
+            userName: userName,
+            email: email,
+            password: password,
+            createdAt: dateString,
+            isLoggedIn: true
         }
-        
+        users.push(newUser);
+        console.log(users)
     }
 }
 
