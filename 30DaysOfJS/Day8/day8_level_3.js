@@ -114,7 +114,7 @@ const personAccount = {
  
     // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.  
 
-console.log(users)
+// console.log(users)
 function signUp(email, userName, password) {
     let userExists = false;
 
@@ -146,7 +146,6 @@ function signUp(email, userName, password) {
             isLoggedIn: true
         }
         users.push(newUser);
-        console.log(users)
     }
 }
 
@@ -168,7 +167,7 @@ function signIn(email, password) {
     if(userExists && password == users[userIndex].password) {
         users[userIndex].isLoggedIn = true;
         console.log(`You have successfully logged in.`)
-        console.log(users[userIndex])
+        // console.log(users[userIndex])
     } else if(userExists && password !== users[userIndex].password) {
         console.log(`You have input the wrong password for the account belonging to ${email}`)
     } else {
@@ -177,11 +176,30 @@ function signIn(email, password) {
 }
 signIn('chrisgrr3@gmail.com', 'Alabaster')
 
+
 // 3. The products array has three elements and each of them has six properties. 
 
     // a. Create a function called rateProduct which rates the product 
     
+console.log(products)
+function rateProduct(productId, userEmail, rating) {
+    let userIndex;
+    let productIndex;
+    for(let user in users) {
+        if(users[user].email == userEmail) {
+            userIndex = user
+            break;
+        }
+    }
+    for(let product in products) {
+        if(products[product]._id == productId) {
+            productIndex = product
+            break;
+        }
+    }
+}
     
+
     // b. Create a function called averageRating which calculate the average rating of a product
 
     
