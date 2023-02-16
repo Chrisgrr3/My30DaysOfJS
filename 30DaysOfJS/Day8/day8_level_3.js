@@ -121,7 +121,7 @@ function signUp(email, userName, password) {
     const chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
 
     let date = new Date();
-    let dateString = `${date.getMonth()}/${date.getDate()}/${date.getFullYear} ${date.getHours}:${date.getMinutes()}`
+    let dateString = `${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} AM`
 
     for(let i = 0; i < users.length; i++) {
         if(users[i].email.toLowerCase() == email.toLowerCase()) {
@@ -149,6 +149,9 @@ function signUp(email, userName, password) {
         console.log(users)
     }
 }
+
+signUp('chrisgrr3@gmail.com', 'cg123', 'Alabaster')
+signUp('ChrISgrr3@gMaIl.com', 'cg1222', 'Coconuts')
 
     // b. Create a function called signIn which allows user to sign in to the application
 
