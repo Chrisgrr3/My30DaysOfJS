@@ -181,24 +181,42 @@ signIn('chrisgrr3@gmail.com', 'Alabaster')
 
     // a. Create a function called rateProduct which rates the product 
     
-console.log(products)
 function rateProduct(productId, userEmail, rating) {
+    if(rating > 5 | rating < 0) {
+        console.log('You may only rate within a scale of 0 - 5.')
+        return -1;
+    }
     let userIndex;
     let productIndex;
+    let userExists = false;
+    let productExists = false
     for(let user in users) {
         if(users[user].email == userEmail) {
             userIndex = user
+            userExists = true;
             break;
         }
+    }
+    if(userExists == false) {
+        console.log('The user does not exist, so they can\'t leave a rating.')
+        return -1;
     }
     for(let product in products) {
         if(products[product]._id == productId) {
             productIndex = product
+            productExists = true
             break;
         }
     }
+    if(productExists == false) {
+        console.log(`The product does not exist. A rating could not be left.`)
+        return -1;
+    }
+    products[productIndex]['ratings'].push({userId: users[userIndex]._id, rate: rating})
+    console.log(products[productIndex]['ratings'])
 }
-    
+rateProduct('hedfcg', 'chrisgrr3@gmail.com', 5)
+
 
     // b. Create a function called averageRating which calculate the average rating of a product
 
