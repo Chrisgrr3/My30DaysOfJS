@@ -121,7 +121,7 @@ function signUp(email, userName, password) {
     const chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
 
     let date = new Date();
-    let dateString = `${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} AM`
+    let dateString = `${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()} AM`
 
     for(let i = 0; i < users.length; i++) {
         if(users[i].email.toLowerCase() == email.toLowerCase()) {
@@ -151,11 +151,31 @@ function signUp(email, userName, password) {
 }
 
 signUp('chrisgrr3@gmail.com', 'cg123', 'Alabaster')
-signUp('ChrISgrr3@gMaIl.com', 'cg1222', 'Coconuts')
+// signUp('ChrISgrr3@gMaIl.com', 'cg1222', 'Coconuts')
 
     // b. Create a function called signIn which allows user to sign in to the application
 
-
+function signIn(email, password) {
+    let userExists = false;
+    let userIndex;
+    for(let i = 0; i < users.length; i++) {
+        if(users[i].email == email){
+            userExists = true
+            userIndex = i;
+            break
+        }
+    }
+    if(userExists && password == users[userIndex].password) {
+        users[userIndex].isLoggedIn = true;
+        console.log(`You have successfully logged in.`)
+        console.log(users[userIndex])
+    } else if(userExists && password !== users[userIndex].password) {
+        console.log(`You have input the wrong password for the account belonging to ${email}`)
+    } else {
+        console.log('The user does not exist. Please sign up instead.')
+    }
+}
+signIn('chrisgrr3@gmail.com', 'Alabaster')
 
 // 3. The products array has three elements and each of them has six properties. 
 
