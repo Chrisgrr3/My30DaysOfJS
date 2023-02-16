@@ -110,14 +110,36 @@ const personAccount = {
 ]
 
 
-
 // 2. Imagine you are getting the above users collection from a MongoDB database. 
  
     // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.  
 
 console.log(users)
-function signUp(email) {
+function signUp(email, userName, password) {
+    let userExists = false;
+    const chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
 
+    for(let i = 0; i < users.length; i++) {
+        if(users[i].email.toLowerCase() == email.toLowerCase()) {
+            userExists = true;
+        }
+    }
+    if(userExists) {
+        console.log(`${email} already has an account. Please sign in instead.`)
+    } else {
+        let newUser = {
+            _id: (function(letters) {
+                let result = ''
+                let length = 6
+                let start = 1
+                for(let i = 0; i < 6; i++) {
+                    result += letters.charAt(Math.floor(Math.random() * letters.length))
+                }
+            })(chars),
+
+        }
+        
+    }
 }
 
     // b. Create a function called signIn which allows user to sign in to the application
