@@ -1,18 +1,18 @@
 // 1. Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
 
 const personAccount = {
-    firstName,
-    lastName,
+    firstName: '',
+    lastName: '',
     incomes : [
         {
-            income,
-            description
+            income: 0,
+            description: ''
         }
     ],
     expenses : [
         {
-            income,
-            description
+            income: 0,
+            description: ''
         }
     ],
     totalIncome : function() {
@@ -33,7 +33,6 @@ const personAccount = {
     accountBalance: function() {
 
     }
-
 }
 
 // ** Questions:2, 3 and 4 are based on the following two arrays:users and products ()
@@ -116,6 +115,10 @@ const personAccount = {
  
     // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.  
 
+console.log(users)
+function signUp(email) {
+
+}
 
     // b. Create a function called signIn which allows user to sign in to the application
 
