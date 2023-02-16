@@ -115,6 +115,20 @@ mernStack()
 
 // 4. Set your name in the users object without modifying the original users object
 
+const copyUsers = Object.assign({}, users)
+copyUsers.Chris = {
+    email: 'chris@chris.com',
+    skills: [
+        'HTML',
+        'JavaScript',
+        'Express',
+        'React',
+        'Node'
+    ],
+    age: 24, isLoggedIn: false,
+    points: 60
+}
+console.log(copyUsers)
 
 
 // 5. Get all keys or properties of users object
