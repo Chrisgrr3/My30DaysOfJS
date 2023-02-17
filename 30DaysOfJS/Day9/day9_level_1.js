@@ -64,6 +64,9 @@ numbers.forEach((number) => console.log(number))
 
 // 6. Use map to create a new array by changing each country to uppercase in the countries array.
 
+const capCountries = countries.map((country) => country.toUpperCase())
+console.log(capCountries)
+
 
 // 7. Use map to create an array of countries length from countries array.
 
