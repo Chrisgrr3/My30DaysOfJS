@@ -16,13 +16,14 @@ const products = [
     // The forEach method is used only on arrays and takes a callback function with element, index, and arr parameters, with the latter two
     // being optional. It is used to iterate through the array elements and perform some sort of action on each element, such as console.log
     // Example:
-        // numbers.forEach((el) => console.log(el) ) -->
+        numbers.forEach((number) => console.log(number))
 
     // The map method iterates over array elements and modifies each element. Takes element, index, and array parameters
     // and returns a new array.
     // Example:
-        // numbers.map((number) => num + num)
-        // console.log(numbers)  ----> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+        const newNumbers = numbers.map((number) => number + number)
+        console.log(newNumbers)
+
 
 // 2. Define a callback function before you use it in forEach, map, filter or reduce.
 
