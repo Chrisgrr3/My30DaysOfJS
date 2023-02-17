@@ -37,9 +37,15 @@ const products = [
         const sum = numbers.reduce((acc, cur) => acc + cur, 5) // Should return 60
         console.log(sum)
 
-        
+
 // 2. Define a callback function before you use it in forEach, map, filter or reduce.
 
+    // A callback function is a function that is passed into another function as a parameter.
+    // Example:
+        // const printNums = numbers.forEach((number) => {
+        //     console.log(number)
+        // })
+        
 
 // 3. Use forEach to console.log each country in the countries array.
 
