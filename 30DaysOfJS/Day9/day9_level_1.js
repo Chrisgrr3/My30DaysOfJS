@@ -45,9 +45,11 @@ const products = [
         // const printNums = numbers.forEach((number) => {
         //     console.log(number)
         // })
-        
+
 
 // 3. Use forEach to console.log each country in the countries array.
+
+countries.forEach((country) => console.log(country))
 
 
 // 4. Use forEach to console.log each name in the names array.
