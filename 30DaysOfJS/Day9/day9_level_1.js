@@ -59,6 +59,8 @@ names.forEach((n) => console.log(n))
 
 // 5. Use forEach to console.log each number in the numbers array.
 
+numbers.forEach((number) => console.log(number))
+
 
 // 6. Use map to create a new array by changing each country to uppercase in the countries array.
 
