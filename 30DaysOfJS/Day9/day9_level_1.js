@@ -24,6 +24,11 @@ const products = [
         const newNumbers = numbers.map((number) => number + number)
         console.log(newNumbers)
 
+    // The filter method filters out items that fulfill filtering conditions and returns a new array.
+    // Example:
+        const greaterThan5 = numbers.filter((number) => number > 5);
+        console.log(greaterThan5)
+
 
 // 2. Define a callback function before you use it in forEach, map, filter or reduce.
 
