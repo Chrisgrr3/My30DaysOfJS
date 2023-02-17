@@ -13,6 +13,8 @@ const products = [
 
 // 1. Explain the difference between forEach, map, filter, and reduce.
 
+    // The forEach method is used only on arrays and takes a callback function with element, index, and arr parameters, with the latter two
+    // being optional. It is used to iterate through the array elements and perform some sort of action on each element, such as console.log
 
 // 2. Define a callback function before you use it in forEach, map, filter or reduce.
 
