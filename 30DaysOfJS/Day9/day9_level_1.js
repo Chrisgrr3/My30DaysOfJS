@@ -29,7 +29,15 @@ const products = [
         const greaterThan5 = numbers.filter((number) => number > 5);
         console.log(greaterThan5)
 
+    // The reduce method takes a callback function, which takes an accumulator, current, and optional initial
+    // value as a parameter and returns a single value. The accumulator essentially iterates through the array
+    // and adds each value (as seen in example below). When we specify an initial value as the second parameter
+    // to the reduce function, this value will be the accumulator's initial value at the start of the function.
+    // Example:
+        const sum = numbers.reduce((acc, cur) => acc + cur, 5) // Should return 60
+        console.log(sum)
 
+        
 // 2. Define a callback function before you use it in forEach, map, filter or reduce.
 
 
