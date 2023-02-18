@@ -176,6 +176,9 @@ console.log(allLand)
 
 // 23. Use find to find the first country containing only six letters in the countries array
 
+const first6 = countries.find((country) => country.length == 6)
+console.log(first6)
+
 
 // 24. Use findIndex to find the position of the first country containing only six letters in the countries array
 
