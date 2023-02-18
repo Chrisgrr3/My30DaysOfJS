@@ -76,6 +76,9 @@ console.log(countryLengths)
 
 // 8. Use map to create a new array by changing each number to square in the numbers array
 
+const squareNumbers = numbers.map((number) => number * number)
+console.log(squareNumbers)
+
 
 // 9. Use map to change to each name to uppercase in the names array
 
