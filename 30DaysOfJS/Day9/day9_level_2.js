@@ -1,5 +1,5 @@
 const { products } = require("./day9_level_1")
-
+const { countries } = require('../Day8/countries')
 
 // 1. Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
 
@@ -19,6 +19,9 @@ console.log(reducePrice)
 
 
 // 3. Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
+
+const categorizeCountries = countries.filter((country) => country.languages.includes('French'))
+console.log(categorizeCountries)
 
 
 // 4. Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
