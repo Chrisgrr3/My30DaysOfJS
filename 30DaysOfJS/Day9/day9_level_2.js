@@ -9,6 +9,14 @@ console.log(totalPrice)
 
 // 2. Find the sum of price of products using only reduce reduce(callback))
 
+const reducePrice = products.reduce((acc, cur) => {
+    if(typeof cur.price == 'number') {
+        return acc += cur.price;
+    }
+    return acc; // Ensure to return accumulator if no additions occur.
+}, 0)
+console.log(reducePrice)
+
 
 // 3. Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
