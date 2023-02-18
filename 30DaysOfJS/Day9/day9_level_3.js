@@ -1,5 +1,24 @@
+const { countries } = require('../Day8/countries')
+
 // 1. Use the countries information, in the data folder. Sort countries by name, by capital, by population
 
+const nameSort = countries.sort(function (a, b) {
+    if(a.name < b.name) return -1
+    if(a.name > b.name) return 1
+})
+// console.log(nameSort)
+
+const capitalSort = countries.sort(function (a, b) {
+    if(a.capital < b.capital) return -1
+    if(a. capital > b.capital) return 1
+})
+// console.log(capitalSort)
+
+const popSort = countries.sort(function(a, b) {
+    if(a.population < b.population) return -1
+    if(a.population > b.population) return 1
+})
+// console.log(popSort)
 
 //  2. Find the 10 most spoken languages:
     //  Your output should look like this
