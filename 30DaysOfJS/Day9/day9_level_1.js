@@ -170,6 +170,9 @@ console.log(allLand)
 
 // 22. Explain the difference between find and findIndex.
 
+    // find returns the first element that satisfies a condition while findIndex returns the index of the first
+    // element that satisfies the condition.
+
 
 // 23. Use find to find the first country containing only six letters in the countries array
 
