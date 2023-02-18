@@ -140,6 +140,15 @@ console.log(sumNums)
 
 // 18. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 
+const sentence = countries.reduce((acc, cur) => {
+    if(cur == 'IceLand') {
+        return acc += `and ${cur} are north European countries`
+    } else {
+        return acc += cur.concat(', ');
+    }
+},'')
+console.log(sentence)
+
 
 // 19. Explain the difference between some and every
 
