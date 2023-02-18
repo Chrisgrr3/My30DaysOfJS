@@ -114,6 +114,9 @@ console.log(sixOrMore)
 
 // 14. Use filter to filter out country start with 'E';
 
+const startsWithE = countries.filter((country) => country.startsWith('E'))
+console.log(startsWithE)
+
 
 // 15. Use filter to filter out only prices with values.
 
