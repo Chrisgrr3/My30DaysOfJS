@@ -102,6 +102,8 @@ console.log(landCountries)
 
 // 12. Use filter to filter out countries having six character.
 
+const sixChars = countries.filter((country) => country.length === 6)
+console.log(sixChars)
 
 // 13. Use filter to filter out countries containing six letters and more in the country array.
 
