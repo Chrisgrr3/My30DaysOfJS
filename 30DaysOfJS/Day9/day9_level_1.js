@@ -88,6 +88,9 @@ console.log(upperNames)
 
 // 10. Use map to map the products array to its corresponding prices.
 
+const prodPrices = products.map((product) => `Product: ${product.product} | Price: ${product.price}`)
+console.log(prodPrices)
+
 
 // 11. Use filter to filter out countries containing land.
 
