@@ -94,6 +94,11 @@ console.log(prodPrices)
 
 // 11. Use filter to filter out countries containing land.
 
+const landCountries = countries.filter((country) => {
+    return country.toLowerCase().includes('land')
+})
+console.log(landCountries)
+
 
 // 12. Use filter to filter out countries having six character.
 
