@@ -120,6 +120,9 @@ console.log(startsWithE)
 
 // 15. Use filter to filter out only prices with values.
 
+const onlyPriced = products.filter((prod) => typeof prod.price == 'number')
+console.log(onlyPriced)
+
 
 // 16. Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 
