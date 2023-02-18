@@ -82,6 +82,9 @@ console.log(squareNumbers)
 
 // 9. Use map to change to each name to uppercase in the names array
 
+const upperNames = names.map((n) => n.toUpperCase())
+console.log(upperNames)
+
 
 // 10. Use map to map the products array to its corresponding prices.
 
