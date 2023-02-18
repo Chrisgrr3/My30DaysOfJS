@@ -38,6 +38,15 @@ console.log(getFirstTenCountries())
 
 // 5. Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 
+const getLastTenCountries = () => {
+    let lastTen = []
+    for(let i = countries.length - 1; i > countries.length - 11; i--) {
+        lastTen.push(countries[i])
+    }
+    return lastTen
+}
+// console.log(getLastTenCountries())
+
 
 // 6. Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
