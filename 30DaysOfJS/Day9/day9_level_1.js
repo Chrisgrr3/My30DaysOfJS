@@ -70,6 +70,9 @@ console.log(capCountries)
 
 // 7. Use map to create an array of countries length from countries array.
 
+const countryLengths = countries.map((country) => country.length)
+console.log(countryLengths)
+
 
 // 8. Use map to create a new array by changing each number to square in the numbers array
 
