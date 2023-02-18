@@ -126,6 +126,11 @@ console.log(onlyPriced)
 
 // 16. Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 
+const getStringLists = arr => {
+    return arr.filter((el) => typeof el == 'string')
+}
+
+console.log(getStringLists([1,2,'e','hi','u']))
 
 // 17. Use reduce to sum all the numbers in the numbers array.
 
