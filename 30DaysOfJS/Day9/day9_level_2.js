@@ -50,3 +50,24 @@ const getLastTenCountries = () => {
 
 // 6. Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
+function commonFirst() {
+    const firstLetters = countries.map((country) => country.name.charAt(0))
+    let currentLetter;
+    let maxLetter;
+    let maxCount = 0;
+    let count = 0;
+    for(let i = 0; i < firstLetters.length; i++) {
+        if(firstLetters[i] == currentLetter) {
+            count++;
+            if(count > maxCount) {
+                maxCount = count
+                maxLetter = firstLetters[i]
+            }
+        } else {
+            currentLetter = firstLetters[i];
+            count = 1
+        }
+    }
+    console.log(`The most common initial letter in the array of countries is '${maxLetter}', which occurs ${maxCount} times.`)
+}
+commonFirst()
