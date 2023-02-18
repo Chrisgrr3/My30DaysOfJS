@@ -152,6 +152,9 @@ console.log(sentence)
 
 // 19. Explain the difference between some and every
 
+    // Every checks if all elements are similar in one aspect while some checks 
+    // if some of the elements are similar in one aspect. Both return a boolean
+
 
 // 20. Use some to check if some names' length greater than seven in names array
 
