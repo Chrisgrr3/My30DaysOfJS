@@ -158,8 +158,13 @@ console.log(sentence)
 
 // 20. Use some to check if some names' length greater than seven in names array
 
+const someGreaterThan7 = names.some((n) => n.length > 7)
+console.log(someGreaterThan7)
+
 
 // 21. Use every to check if all the countries contain the word land
+
+
 
 
 // 22. Explain the difference between find and findIndex.
