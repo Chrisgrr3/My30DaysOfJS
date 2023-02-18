@@ -130,9 +130,12 @@ const getStringLists = arr => {
     return arr.filter((el) => typeof el == 'string')
 }
 
-console.log(getStringLists([1,2,'e','hi','u']))
+console.log(getStringLists([1,2,'e','hi',4,'u']))
 
 // 17. Use reduce to sum all the numbers in the numbers array.
+
+const sumNums = numbers.reduce((acc, cur) => acc + cur, 0)
+console.log(sumNums)
 
 
 // 18. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
