@@ -1691,7 +1691,7 @@ const countries = [
       currency: 'British pound'
     },
     {
-      name: 'Korea (Republic of)',
+      name: 'South Korea (Republic of)',
       capital: 'Seoul',
       languages: ['Korean'],
       population: 50801405,

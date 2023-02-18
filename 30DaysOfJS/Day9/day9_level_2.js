@@ -21,13 +21,23 @@ console.log(reducePrice)
 // 3. Declare a function called categorizeCountries which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
 
 const categorizeCountries = countries.filter((country) => country.languages.includes('French'))
-console.log(categorizeCountries)
+// console.log(categorizeCountries)
 
 
 // 4. Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+
+const getFirstTenCountries = () => {
+    let firstTen = [];
+    for(let i = 0; i < 10; i++) {
+        firstTen.push(countries[i])
+    }
+    return firstTen
+}
+console.log(getFirstTenCountries())
 
 
 // 5. Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 
 
 // 6. Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+
