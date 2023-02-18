@@ -196,3 +196,5 @@ console.log(norway)
 
 const russia = countries.findIndex((country) => country == 'Russia')
 console.log(russia)
+
+module.exports = { products, countries, names, numbers }

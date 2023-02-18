@@ -1,4 +1,10 @@
+const { products } = require("./day9_level_1")
+
+
 // 1. Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+
+const totalPrice = products.filter((product) => typeof product.price === 'number').reduce((acc, cur) => acc + cur.price, 0);
+console.log(totalPrice)
 
 
 // 2. Find the sum of price of products using only reduce reduce(callback))
