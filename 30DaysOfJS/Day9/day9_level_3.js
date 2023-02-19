@@ -44,18 +44,33 @@ const popSort = countries.sort(function(a, b) {
         // ]```
 
 const mostSpokenLanguages = () => {
-    const languageSets = {}
+    const langUsages = []
     let languageMap = countries.forEach((country) => {
         country.languages.forEach((lang) => {
-            if(languageSets.hasOwnProperty(lang)) {
-                languageSets[lang]++
-            } else {
-                languageSets[lang] = 1
-            }
+            langUsages.push(lang)
         })
     })
-    const entries = Object.entries(languageSets)
-    console.log(entries)
+    console.log(langUsages)
+    const counts = []
+    let pos = 0
+    langUsages.sort()
+    let current = langUsages[0]
+    counts.push({lang: '', count: 0})
+    for(const lang of langUsages) {
+        if(lang == current) {
+            counts[pos].count+= 1
+        } else {
+            counts.push({lang: lang, count: 1})
+            pos = counts.length - 1;
+        }
+        current = lang
+    }
+    counts.splice(0,1);
+    counts.sort((a, b) => {
+        if(a.count > b.count) return -1;
+        if(a.count < b.count) return 1;
+    })
+    console.log(counts)
 }
 mostSpokenLanguages()
 
