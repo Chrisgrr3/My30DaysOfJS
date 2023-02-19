@@ -43,7 +43,7 @@ const popSort = countries.sort(function(a, b) {
         // {country: 'Arabic',count: 25},
         // ]```
 
-const mostSpokenLanguages = () => {
+const mostSpokenLanguages = (amount) => {
     const langUsages = []
     let languageMap = countries.forEach((country) => {
         country.languages.forEach((lang) => {
@@ -52,16 +52,16 @@ const mostSpokenLanguages = () => {
     })
     console.log(langUsages)
     const counts = []
-    let pos = 0
+    let countArrPos = 0
     langUsages.sort()
     let current = langUsages[0]
     counts.push({lang: '', count: 0})
     for(const lang of langUsages) {
         if(lang == current) {
-            counts[pos].count+= 1
+            counts[countArrPos].count+= 1
         } else {
             counts.push({lang: lang, count: 1})
-            pos = counts.length - 1;
+            countArrPos = counts.length - 1;
         }
         current = lang
     }
@@ -70,9 +70,13 @@ const mostSpokenLanguages = () => {
         if(a.count > b.count) return -1;
         if(a.count < b.count) return 1;
     })
-    console.log(counts)
+    let result = []
+    for(let i = 0; i < amount; i++) {
+        result.push(counts[i])
+    }
+    console.log(result)
 }
-mostSpokenLanguages()
+mostSpokenLanguages(3)
 
 // 3. Use countries_data.js file create a function which create the ten most populated countries
     // console.log(mostPopulatedCountries(countries, 10))
