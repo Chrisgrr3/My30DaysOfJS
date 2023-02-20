@@ -9,3 +9,9 @@ for(const {name, scores, skills, age} of users) {
 
 // 2. Find the persons who have less than two skills
 
+const lessThan2Skills = []
+for(const {name, skills} of users) {
+    if(skills.length < 2) lessThan2Skills.push(name)
+}
+
+console.log(lessThan2Skills)
