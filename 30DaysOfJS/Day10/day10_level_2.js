@@ -5,8 +5,9 @@ const A = new Set(a)
 const B = new Set(b)
 // 1. Find a union b
 
-const c = a.filter((num) => B.has(num))
-console.log(c)
+const c = [...a,...b]
+const C = new Set(c)
+console.log(C)
 
 // 2. Find a intersection b
 
