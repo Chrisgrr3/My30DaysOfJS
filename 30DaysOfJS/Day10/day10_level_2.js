@@ -9,7 +9,11 @@ const c = [...a,...b]
 const C = new Set(c)
 console.log(C)
 
+
 // 2. Find a intersection b
+
+const inter = a.filter((num) => B.has(num))
+console.log(inter)
 
 
 // 3. Find a with b
