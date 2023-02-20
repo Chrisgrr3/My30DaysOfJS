@@ -63,3 +63,5 @@ const [fin, est, sw, den, nor] = countries
 
 // 3. Destructure the rectangle object by its properties or keys.
 
+const { width:w, height:h, area:a, perimeter:p} = rectangle
+console.log(w, h, a, p)
