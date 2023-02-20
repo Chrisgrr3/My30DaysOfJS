@@ -24,6 +24,12 @@ console.log(numSet)
 
 // 4. Clear a set
 
+let setArr = [1,2,5,6,8,10,59,'hi']
+let mySet = new Set(setArr)
+console.log(mySet)
+mySet.clear()
+console.log(mySet)
+
 
 // 5. Create a set of 5 string elements from array
 
