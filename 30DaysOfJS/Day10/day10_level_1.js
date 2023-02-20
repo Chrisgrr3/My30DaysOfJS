@@ -4,6 +4,7 @@ const countries = ['Finland', 'Sweden', 'Norway']
 
 // 1. create an empty set
 
+let emptySet = new Set()
 
 // 2. Create a set containing 0 to 10 using loop
 
