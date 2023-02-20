@@ -1,6 +1,16 @@
+const { countries } = require('../Day8/countries')
+
 // 1. How many languages are there in the countries object file.
 
+const langSet = new Set()
+const langMap = countries.filter((country) => {
+    country.languages.forEach((lang) => {
+        langSet.add(lang)
+    })
+})
+console.log(langSet)
 
+console.log(`The number of languages in the countries object file is ${langSet.size}.`)
 
 
 // 2. Use the countries data to find the 10 most spoken languages:
