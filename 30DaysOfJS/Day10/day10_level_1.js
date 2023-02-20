@@ -18,6 +18,9 @@ console.log(numSet)
 
 // 3. Remove an element from a set
 
+numSet.delete(10);
+console.log(numSet)
+
 
 // 4. Clear a set
 
