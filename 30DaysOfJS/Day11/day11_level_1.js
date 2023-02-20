@@ -53,7 +53,7 @@ const users = [
 
 // 1. Destructure and assign the elements of constants array to e, pi, gravity, humanBodyTemp, waterBoilingTemp.
 
-
+const [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants
 
 
 // 2. Destructure and assign the elements of countries array to fin, est, sw, den, nor
