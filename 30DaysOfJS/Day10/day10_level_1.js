@@ -33,5 +33,8 @@ console.log(mySet)
 
 // 5. Create a set of 5 string elements from array
 
+const stringArr = ['', 'hi', 'bye', 'taco', 'BELL']
+const stringSet = new Set(stringArr)
+
 
 // 6. Create a map of countries and number of characters of a country
