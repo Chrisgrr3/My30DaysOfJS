@@ -65,3 +65,5 @@ const [fin, est, sw, den, nor] = countries
 
 const { width:w, height:h, area:a, perimeter:p} = rectangle
 console.log(w, h, a, p)
+
+module.exports = { users }
