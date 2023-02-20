@@ -16,5 +16,11 @@ const inter = a.filter((num) => B.has(num))
 console.log(inter)
 
 
-// 3. Find a with b
+// 3. Find the difference between a and b
 
+let diff = a.filter((num) => !B.has(num))
+b.forEach((num) => {
+    if(!A.has(num)) diff.push(num);
+})
+let diffSet = new Set(diff)
+console.log(diffSet)
