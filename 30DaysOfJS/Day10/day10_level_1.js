@@ -6,7 +6,14 @@ const countries = ['Finland', 'Sweden', 'Norway']
 
 let emptySet = new Set()
 
+
 // 2. Create a set containing 0 to 10 using loop
+
+let numSet = new Set()
+for(let num = 0; num <= 10; num++) {
+    numSet.add(num)
+}
+console.log(numSet)
 
 
 // 3. Remove an element from a set
