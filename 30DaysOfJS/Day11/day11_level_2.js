@@ -1,2 +1,7 @@
-Iterate through the users array and get all the keys of the object using destructuring
-Find the persons who have less than two skills
+// 1. Iterate through the users array and get all the keys of the object using destructuring
+
+
+
+
+// 2. Find the persons who have less than two skills
+
