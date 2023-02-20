@@ -38,3 +38,7 @@ const stringSet = new Set(stringArr)
 
 
 // 6. Create a map of countries and number of characters of a country
+
+const countryMap = new Map()
+countries.forEach((country) => countryMap.set(country, country.length))
+console.log(countryMap)
