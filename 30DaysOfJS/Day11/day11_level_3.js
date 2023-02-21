@@ -17,9 +17,6 @@ const [name, skills, scores, jsScore = student[2][2], reactScore = student[2][3]
 console.log(name, skills, jsScore, reactScore)
 
 
-
-
-
     // 3. Write a function called convertArrayToObject which can convert the array to a structure object.
 //     const students = [
 //         ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
