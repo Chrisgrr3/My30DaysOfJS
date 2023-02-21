@@ -17,27 +17,34 @@ const [name, skills, scores, jsScore = student[2][2], reactScore = student[2][3]
 console.log(name, skills, jsScore, reactScore)
 
 
-    // 3. Write a function called convertArrayToObject which can convert the array to a structure object.
-//     const students = [
-//         ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
-//         ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
-//       ]
+// 3. Write a function called convertArrayToObject which can convert the array to a structure object.
+    const students = [
+        ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+        ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+      ]
 
-//     console.log(convertArrayToObject(students))
-//     [
-//       {
-//         name: 'David',
-//         skills: ['HTM','CSS','JS','React'],
-//         scores: [98,85,90,95]
-//       },
-//       {
-//         name: 'John',
-//         skills: ['HTM','CSS','JS','React'],
-//         scores: [85, 80,85,80]
-//       }
-//     ]
+    // console.log(convertArrayToObject(students))
+    // [
+    //   {
+    //     name: 'David',
+    //     skills: ['HTM','CSS','JS','React'],
+    //     scores: [98,85,90,95]
+    //   },
+    //   {
+    //     name: 'John',
+    //     skills: ['HTM','CSS','JS','React'],
+    //     scores: [85, 80,85,80]
+    //   }
+    // ]
 
-
+const convertArrayToObject = () => {
+    const result = [];
+    for(const [name, skills, scores] of students) {
+        result.push({name, skills, scores})
+    }
+    return result
+}
+console.log(convertArrayToObject())
 
 
 // 4. Copy the student object to newStudent without mutating the original object. In the new object add the following ?
