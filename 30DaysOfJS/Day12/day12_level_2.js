@@ -1,6 +1,6 @@
-// Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
+// 1. Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
 
-//     paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+const paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
 //     console.log(tenMostFrequentWords(paragraph))
 //     [
 //     {word:'love', count:6},
@@ -37,3 +37,27 @@
 // {word:'I', count:2},
 // {word:'which', count:1}
 // ]
+
+function tenMostFrequentWords(str) {
+    const words = str.split(' ')
+    const wordSet = new Set(words)
+    const wordCounts = [];
+    let result = []
+    let regEx;
+    let matches;
+    for(let word of wordSet) {
+        regEx = new RegExp(`${word}+`, 'g')
+        matches = str.match(regEx)
+        wordCounts.push({word: word, count: matches.length})
+    }
+    wordCounts.sort((a, b) => {
+        if(a.count > b.count) return -1;
+        if(a.count < b.count) return 1
+    })
+    for(let i = 0; i < 10; i++) {
+        result.push(wordCounts[i])
+    }
+    console.log(result)
+}
+
+tenMostFrequentWords(paragraph)
