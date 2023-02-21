@@ -18,3 +18,22 @@ totalAnnualIncome()
     // is_valid_variable('1first_name') // False
     // is_valid_variable('firstname') // True
 
+    function isValidVariable(str) {
+        const starts = /^[A-Za-z$_]/g
+        const match = str.match(starts)
+        const notAllowed = str.match(/[^A-Za-z$_]/g)
+        if(match === null) {
+            console.log(false)
+            return false
+        }
+        if(notAllowed != null) {
+            console.log(false)
+            return false
+        }
+        console.log(true)
+        return true
+    }
+    isValidVariable('b00l')
+    isValidVariable('bool')
+    isValidVariable('1first_name')
+
