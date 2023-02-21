@@ -12,7 +12,7 @@ for(const {name, capital, population, languages} of countries) {
     // console.log(name, skills, jsScore, reactScore)
     // David (4) ["HTM", "CSS", "JS", "React"] 90 95
 
-const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+let student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
 const [name, skills, scores, jsScore = student[2][2], reactScore = student[2][3]] = student
 console.log(name, skills, jsScore, reactScore)
 
@@ -52,26 +52,26 @@ console.log(convertArrayToObject())
     // Add Express with level 9 to the back end skill sets
     // Add SQL with level 8 to the data base skill sets
     // Add SQL without level to the data science skill sets
-//     const student = {
-//       name: 'David',
-//       age: 25,
-//       skills: {
-//         frontEnd: [
-//           { skill: 'HTML', level: 10 },
-//           { skill: 'CSS', level: 8 },
-//           { skill: 'JS', level: 8 },
-//           { skill: 'React', level: 9 }
-//         ],
-//         backEnd: [
-//           { skill: 'Node',level: 7 },
-//           { skill: 'GraphQL', level: 8 },
-//         ],
-//         dataBase:[
-//           { skill: 'MongoDB', level: 7.5 },
-//         ],
-//         dataScience:['Python', 'R', 'D3.js']
-//       }
-//     }
+    student = {
+      name: 'David',
+      age: 25,
+      skills: {
+        frontEnd: [
+          { skill: 'HTML', level: 10 },
+          { skill: 'CSS', level: 8 },
+          { skill: 'JS', level: 8 },
+          { skill: 'React', level: 9 }
+        ],
+        backEnd: [
+          { skill: 'Node',level: 7 },
+          { skill: 'GraphQL', level: 8 },
+        ],
+        dataBase:[
+          { skill: 'MongoDB', level: 7.5 },
+        ],
+        dataScience:['Python', 'R', 'D3.js']
+      }
+    }
 
     // The copied object output should look like this:
 
@@ -99,3 +99,10 @@ console.log(convertArrayToObject())
 //     }
 //   }
 
+const copiedStudent = {...student}
+copiedStudent.name = 'Chris'
+copiedStudent.skills.frontEnd.push({skill: 'Bootstrap', level: 8})
+copiedStudent.skills.backEnd.push({skill: 'Express', level: 9})
+copiedStudent.skills.dataBase.push({skill: 'SQL', level: 8})
+copiedStudent.skills.dataScience.push('SQL')
+console.log(student.skills)
