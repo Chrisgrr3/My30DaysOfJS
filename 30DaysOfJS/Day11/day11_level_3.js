@@ -4,7 +4,7 @@ console.log(countries)
 // 1. Destructure the countries object print name, capital, population and languages of all countries
 
 for(const {name, capital, population, languages} of countries) {
-    console.log(name, capital, population, languages)
+    console.log(`Name: ${name}, Capital: ${capital}, Population: ${population}, Languages: ${languages}`)
 }
 
 
