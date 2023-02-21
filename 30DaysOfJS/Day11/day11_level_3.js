@@ -106,3 +106,9 @@ copiedStudent.skills.backEnd.push({skill: 'Express', level: 9})
 copiedStudent.skills.dataBase.push({skill: 'SQL', level: 8})
 copiedStudent.skills.dataScience.push('SQL')
 console.log(student.skills)
+
+// Test this out in the morning:
+// const { name, age, skills: {frontEnd, backEnd, dataBase, dataScience} } = copiedStudent
+// name = 'Chris'
+// age = 24
+// frontEnd.push
