@@ -23,3 +23,7 @@ console.table(state)
 
 // Use console.group() to group logs
 
+console.group('Countries')
+console.log(countries)
+console.group('State')
+console.log(state)
