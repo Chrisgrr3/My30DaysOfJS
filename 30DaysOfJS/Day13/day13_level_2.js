@@ -10,3 +10,4 @@ console.warn('Usage of the variable \'name\' has been deprecated.')
 
 // 3. Write an error message using console.error()
 
+console.error('This is an error message. Not much to worry about though!')
