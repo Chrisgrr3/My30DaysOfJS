@@ -9,9 +9,16 @@ const countries = [
 console.table(countries)
 
 
-// 2. Display the countries object as a table
+// 2. Display the state object as a table
 
-
+const state = {
+    state: 'Alaska',
+    majCity: 'Anchorage',
+    temp: 'cold',
+    location: 'NW',
+    founded: 1959
+}
+console.table(state)
 
 
 // Use console.group() to group logs
