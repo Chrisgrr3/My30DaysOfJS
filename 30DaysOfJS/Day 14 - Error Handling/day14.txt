@@ -1,1 +1,1 @@
-There are no code challenges for day 14 of 30 Days of JavaScript.
+There are no code challenges for day 14 of 30 Days of JavaScript. 
