@@ -6,7 +6,7 @@ const countries = [
 
 // 1. Display the countries array as a table
 
-
+console.table(countries)
 
 
 // 2. Display the countries object as a table
