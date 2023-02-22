@@ -66,3 +66,5 @@ class Bird extends Animal {
 
 const myBird = new Bird('Lencho', 2, 'Green')
 myBird.whatAmI()
+
+module.exports = { Animal }
