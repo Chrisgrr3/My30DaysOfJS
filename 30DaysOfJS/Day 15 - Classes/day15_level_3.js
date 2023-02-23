@@ -9,6 +9,14 @@ class Statistics {
         return this.arr.length
     }
 
+    sum() {
+        let sum = 0;
+        this.arr.forEach((el) => {
+            sum += el
+        })
+        return sum
+    }
+
     
 }
 
