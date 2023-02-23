@@ -25,6 +25,10 @@ class Statistics {
         return Math.max(...this.arr)
     }
 
+    range() {
+        return this.max() - this.min()
+    }
+
     
 }
 
