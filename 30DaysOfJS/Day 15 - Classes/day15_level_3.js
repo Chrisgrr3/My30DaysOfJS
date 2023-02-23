@@ -29,6 +29,10 @@ class Statistics {
         return this.max() - this.min()
     }
 
+    mean() {
+        return Math.round(this.sum() / this.arr.length)
+    }
+
     
 }
 
