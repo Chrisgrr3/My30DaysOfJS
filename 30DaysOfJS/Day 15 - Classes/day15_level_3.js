@@ -47,6 +47,18 @@ class Statistics {
         })
         return counts[0]
     }
+
+    variance() {
+        let vals = []
+        for(let i = 0; i < this.arr.length; i++) {
+            vals.push(Math.pow((this.arr[i] - this.mean()), 2))
+        }
+        let numerator = 0;
+        for(let i = 0; i < vals.length; i++) {
+            numerator+= vals[i]
+        }
+        return numerator/this.count()
+    }
 }
 
 ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
@@ -59,7 +71,7 @@ console.log(statistics.max())
 console.log(statistics.range())
 console.log(statistics.mean())
 console.log(statistics.mode())
-
+console.log(statistics.variance())
 
     // console.log('Count:', statistics.count()) // 25
     // console.log('Sum: ', statistics.sum()) // 744
