@@ -33,7 +33,20 @@ class Statistics {
         return Math.round(this.sum() / this.arr.length)
     }
 
-    
+    mode() {
+        let resultSet = new Set(this.arr)
+        const counts = []
+
+        for(const num of resultSet) {
+            const filteredNums = this.arr.filter((n) => n === num)
+            counts.push({mode: num, count: filteredNums.length})
+        }
+        counts.sort((a, b) => {
+            if(a.count > b.count) return -1
+            if(a.count < b.count) return 1
+        })
+        return counts[0]
+    }
 }
 
 ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
