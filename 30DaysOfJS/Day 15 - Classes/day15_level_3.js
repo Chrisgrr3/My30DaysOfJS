@@ -21,6 +21,10 @@ class Statistics {
         return Math.min(...this.arr)
     }
 
+    max() {
+        return Math.max(...this.arr)
+    }
+
     
 }
 
