@@ -17,6 +17,10 @@ class Statistics {
         return sum
     }
 
+    min() {
+        return Math.min(...this.arr)
+    }
+
     
 }
 
