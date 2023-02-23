@@ -5,6 +5,10 @@ class Statistics {
         this.arr = arr
     }
 
+    count() {
+        return this.arr.length
+    }
+
     
 }
 
