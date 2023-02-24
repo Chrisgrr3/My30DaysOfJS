@@ -1,46 +1,47 @@
-{
-    "users":[
-        {
-            "firstName":"Chris",
-            "lastName":"Guerrero",
-            "age":250,
-            "email":"chris@chris.com"
-        },
-        {
-            "firstName":"Albus",
-            "lastName":"Dumbledore",
-            "age":70,
-            "email":"dumbledore@hogwarts.com"
-        },
-        {
-            "firstName": "Harry",
-            "lastName": "Potter",
-            "age": 19,
-            "email": "potter@hogwarts.com"
-        }
-    ]
-}
-
-{
-    "Alex": {
-        "email": "alex@alex.com",
-        "skills": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "age":19,
-        "isLoggedIn": false,
-        "points": 30
+[
+    {
+        "users":[
+            {
+                "firstName":"Chris",
+                "lastName":"Guerrero",
+                "age":250,
+                "email":"chris@chris.com"
+            },
+            {
+                "firstName":"Albus",
+                "lastName":"Dumbledore",
+                "age":70,
+                "email":"dumbledore@hogwarts.com"
+            },
+            {
+                "firstName": "Harry",
+                "lastName": "Potter",
+                "age": 19,
+                "email": "potter@hogwarts.com"
+            }
+        ]
     },
-    "Chris": {
-        "email": "chris@chris.com",
-        "skills": [
-            "HTML",
-            "JavaScript"
-        ],
-        "age": 24,
-        "isLoggedIn": true,
-        "points": 31
+    {
+        "Alex": {
+            "email": "alex@alex.com",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "age":19,
+            "isLoggedIn": false,
+            "points": 30
+        },
+        "Chris": {
+            "email": "chris@chris.com",
+            "skills": [
+                "HTML",
+                "JavaScript"
+            ],
+            "age": 24,
+            "isLoggedIn": true,
+            "points": 31
+        }
     }
-}
+]
