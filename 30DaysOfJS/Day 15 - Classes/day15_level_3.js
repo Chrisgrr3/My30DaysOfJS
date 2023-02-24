@@ -165,6 +165,10 @@ class PersonAccount {
     addIncome(i) {
         this.incomes.push(i)
     }
+
+    addExpense(e) {
+        this.expenses.push(e)
+    }
 }
 
 const person = new PersonAccount('Chris', 'Guerrero', [1,4,6,8,10], [4,2,1,4])
