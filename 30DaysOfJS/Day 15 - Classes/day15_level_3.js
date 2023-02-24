@@ -63,6 +63,20 @@ class Statistics {
     std() {
         return Math.sqrt(this.variance()).toFixed(1)
     }
+
+    freqDist() {
+        let resultSet = new Set(this.arr)
+        let result = []
+        for(const num of resultSet) {
+            const filteredNums = this.arr.filter((n) => n === num)
+            result.push([((filteredNums.length/this.arr.length)*100), num])
+        }
+        result.sort((a, b) => {
+            if(a[0] > b[0]) return -1
+            if(a[0] < b[0]) return 1
+        })
+        return result;
+    }
 }
 
 ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
@@ -77,6 +91,7 @@ console.log(statistics.mean())
 console.log(statistics.mode())
 console.log(statistics.variance())
 console.log(statistics.std())
+console.log(statistics.freqDist())
 
     // console.log('Count:', statistics.count()) // 25
     // console.log('Sum: ', statistics.sum()) // 744
