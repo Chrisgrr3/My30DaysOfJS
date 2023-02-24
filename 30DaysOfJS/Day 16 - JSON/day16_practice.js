@@ -128,7 +128,22 @@ const users = {
       isLoggedIn: false,
       points: 40
     }
-  }
+}
 
-  const userString = JSON.stringify(users, undefined, 4);
-  console.log(userString)
+const userString = JSON.stringify(users, undefined, 4);
+console.log(userString)
+
+const user = {
+    firstName: 'Chris',
+    lastName: 'Guerrero',
+    country: 'USA',
+    city: 'Phoenix',
+    email: 'chris@chris.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Python'],
+    age: 300,
+    isLoggedIn: true,
+    points:50
+}
+
+const txt = JSON.stringify(user, ['firstName', 'lastName', 'country', 'city', 'skills'])
+console.log(txt)
