@@ -117,7 +117,8 @@ console.log(skillString)
 
 // 2. Stringify the age variable
 
-
+age = JSON.stringify(age)
+console.log(typeof age, ':',age)
 
 
 // 3. Stringify the isMarried variable
