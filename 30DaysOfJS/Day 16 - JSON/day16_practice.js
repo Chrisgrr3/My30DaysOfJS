@@ -54,5 +54,9 @@ const usersObj = JSON.parse(usersText, (key, value) => {
     return newValue
 })
 
+const olderObj = JSON.parse(usersText, (key, value) => {
+    let newAge = typeof value == 'number' && key =='age' ? value += 10 : value
+    return newAge
+})
 
-console.log(usersObj)
+console.log(olderObj)
