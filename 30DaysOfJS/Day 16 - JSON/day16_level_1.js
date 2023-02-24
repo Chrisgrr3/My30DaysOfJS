@@ -129,3 +129,5 @@ console.log(typeof isMarried, ':', isMarried)
 
 // 4. Stringify the student object
 
+const studentString = JSON.stringify(student)
+console.log(studentString)
