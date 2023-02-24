@@ -114,6 +114,7 @@ const txt = `{
 let skillString = JSON.stringify(skills)
 console.log(skillString)
 
+
 // 2. Stringify the age variable
 
 
