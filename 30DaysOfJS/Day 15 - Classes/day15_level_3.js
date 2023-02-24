@@ -161,6 +161,10 @@ class PersonAccount {
         console.groupEnd()
         return [this.firstName, this.lastName, this.expenses, this.incomes]
     }
+
+    addIncome(i) {
+        this.incomes.push(i)
+    }
 }
 
 const person = new PersonAccount('Chris', 'Guerrero', [1,4,6,8,10], [4,2,1,4])
