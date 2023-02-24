@@ -128,6 +128,7 @@ class PersonAccount {
         this.lastName = lastName;
         this.incomes = incomes;
         this.expenses = expenses;
+        this.balance = this.totalIncome() - this.totalExpense()
     }
 
     totalIncome() {
@@ -169,8 +170,14 @@ class PersonAccount {
     addExpense(e) {
         this.expenses.push(e)
     }
+
+    accountBalance() {
+        console.log(`Your current account balance is \$${this.balance}.`)
+        return this.balance
+    }
 }
 
 const person = new PersonAccount('Chris', 'Guerrero', [1,4,6,8,10], [4,2,1,4])
 
 person.accountInfo()
+person.accountBalance()
