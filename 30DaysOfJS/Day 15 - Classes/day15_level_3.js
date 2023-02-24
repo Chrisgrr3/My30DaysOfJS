@@ -145,4 +145,24 @@ class PersonAccount {
         }
         return total
     }
+
+    accountInfo() {
+        console.group("First Name:")
+        console.log(this.firstName)
+        console.groupEnd()
+        console.group("Last Name:")
+        console.log(this.lastName)
+        console.groupEnd()
+        console.group("Expenses:")
+        console.log(this.expenses)
+        console.groupEnd()
+        console.group("Incomes:")
+        console.log(this.incomes)
+        console.groupEnd()
+        return [this.firstName, this.lastName, this.expenses, this.incomes]
+    }
 }
+
+const person = new PersonAccount('Chris', 'Guerrero', [1,4,6,8,10], [4,2,1,4])
+
+person.accountInfo()
