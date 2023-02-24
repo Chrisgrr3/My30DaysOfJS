@@ -132,6 +132,14 @@ class PersonAccount {
 
     totalIncome() {
         let total = 0;
+        for(let i = 0; i < this.incomes.length; i++) {
+            total += this.incomes[i]
+        }
+        return total
+    }
+
+    totalExpense() {
+        let total = 0
         for(let i = 0; i < this.expenses.length; i++) {
             total += this.expenses[i]
         }
