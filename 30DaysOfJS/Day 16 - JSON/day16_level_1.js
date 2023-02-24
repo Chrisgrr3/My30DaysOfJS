@@ -123,7 +123,8 @@ console.log(typeof age, ':',age)
 
 // 3. Stringify the isMarried variable
 
-
+isMarried = JSON.stringify(isMarried)
+console.log(typeof isMarried, ':', isMarried)
 
 
 // 4. Stringify the student object
