@@ -1,3 +1,5 @@
+let { txt } = require('./day16_level_1')
+
 // 1. Parse the txt JSON to object.
 
 
