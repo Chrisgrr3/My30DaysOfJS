@@ -24,6 +24,23 @@
 {
     "Alex": {
         "email": "alex@alex.com",
-        
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "age":19,
+        "isLoggedIn": false,
+        "points": 30
+    },
+    "Chris": {
+        "email": "chris@chris.com",
+        "skills": [
+            "HTML",
+            "JavaScript"
+        ],
+        "age": 24,
+        "isLoggedIn": true,
+        "points": 31
     }
 }
