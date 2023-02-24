@@ -112,22 +112,24 @@ const txt = `{
 // 1. Change skills array to JSON using JSON.stringify()
 
 let skillString = JSON.stringify(skills)
-console.log(skillString)
+// console.log(skillString)
 
 
 // 2. Stringify the age variable
 
 age = JSON.stringify(age)
-console.log(typeof age, ':',age)
+// console.log(typeof age, ':',age)
 
 
 // 3. Stringify the isMarried variable
 
 isMarried = JSON.stringify(isMarried)
-console.log(typeof isMarried, ':', isMarried)
+// console.log(typeof isMarried, ':', isMarried)
 
 
 // 4. Stringify the student object
 
 const studentString = JSON.stringify(student)
-console.log(studentString)
+// console.log(studentString)
+
+module.exports = { student }
