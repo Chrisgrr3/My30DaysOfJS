@@ -132,4 +132,4 @@ isMarried = JSON.stringify(isMarried)
 const studentString = JSON.stringify(student)
 // console.log(studentString)
 
-module.exports = { student }
+module.exports = { student, txt }
