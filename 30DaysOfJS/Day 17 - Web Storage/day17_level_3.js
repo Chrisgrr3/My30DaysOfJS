@@ -62,3 +62,5 @@ personAccount.addExpense('2000', 'Discover student loans, monthly')
 const accountJSON = JSON.stringify(personAccount, undefined, 4)
 
 console.log(accountJSON)
+
+localStorage.setItem('personAccount', accountJSON)
