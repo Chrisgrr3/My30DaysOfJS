@@ -10,7 +10,7 @@ const personAccount =  {
 
     ],
 
-    totalIncome = function() {
+    totalIncome : function() {
         let total = 0;
         for(let i = 0; i < this.incomes.length; i++) {
             total += this.incomes[i]
@@ -18,7 +18,7 @@ const personAccount =  {
         return total
     },
 
-    totalExpense = function {
+    totalExpense : function() {
         let total = 0
         for(let i = 0; i < this.expenses.length; i++) {
             total += this.expenses[i]
@@ -26,7 +26,7 @@ const personAccount =  {
         return total
     },
 
-    accountInfo = function() {
+    accountInfo : function() {
         console.group("First Name:")
         console.log(this.firstName)
         console.groupEnd()
@@ -42,16 +42,23 @@ const personAccount =  {
         return [this.firstName, this.lastName, this.expenses, this.incomes]
     },
 
-    addIncome = function(i){
-        this.incomes.push(i)
+    addIncome : function(amount, desc){
+        this.incomes.push({amount: amount, desc: desc})
     },
 
-    addExpense = function(e) {
-        this.expenses.push(e)
+    addExpense : function(amount, desc) {
+        this.expenses.push({amount: amount, desc: desc})
     },
 
-    accountBalance = function() {
+    accountBalance : function() {
         console.log(`Your current account balance is \$${this.balance}.`)
         return this.balance
     }
 }
+
+personAccount.addIncome('0', "Unemployed")
+personAccount.addExpense('2000', 'Discover student loans, monthly')
+
+const accountJSON = JSON.stringify(personAccount, undefined, 4)
+
+console.log(accountJSON)
