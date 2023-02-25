@@ -17,3 +17,5 @@ const student = {
         'ENG200'
     ]
 }
+
+localStorage.setItem('student', student)
