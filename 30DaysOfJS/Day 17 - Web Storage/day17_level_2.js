@@ -21,3 +21,4 @@ const student = {
 const studentJSON = JSON.stringify(student, undefined, 4)
 
 localStorage.setItem('student', studentJSON)
+localStorage.getItem('student')
