@@ -89,7 +89,7 @@ const square = async function(n) {
     return n * n
 }
 
-console.log(square(2))
+// console.log(square(2))
 
 async function cube(n) {
     return Math.pow(n, 3)
@@ -102,4 +102,10 @@ const cubeVal = async function(n) {
     const value = await cube(n)
     console.log(value)
 }
-cubeVal(3)
+// cubeVal(3)
+
+const readSquare = async function(n) {
+    const value = await square(n)
+    console.log(value)
+}
+readSquare(3)
