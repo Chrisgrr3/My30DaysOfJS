@@ -18,4 +18,4 @@ const fetchData = async () => {
         console.error(err)
     }
 }
-fetchData()
+// fetchData()

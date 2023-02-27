@@ -1,5 +1,5 @@
 const { catsAPI } = require("./day18_level_2");
-
+const { url } = require('./day18_level_1')
 // 1. Read the cats api and find the average weight of cat in metric unit.
 
 
