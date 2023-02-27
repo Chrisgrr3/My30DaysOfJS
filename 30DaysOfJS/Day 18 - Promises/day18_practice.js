@@ -31,7 +31,7 @@ doSomethingElse((err, result) => {
 })
 
 // Promise construction syntax
-const promise = new Promise((resolve, reject) => {
+const promiseSyntax = new Promise((resolve, reject) => {
     resolve('success')
     reject('failure')
 })
