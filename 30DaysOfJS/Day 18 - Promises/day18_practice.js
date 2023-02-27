@@ -109,3 +109,13 @@ const readSquare = async function(n) {
     console.log(value)
 }
 readSquare(3)
+
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        for(let i = 5; i < 10; i++) {
+            console.log(data[i].flag)
+        }
+    })
+    .catch(error => console.error(error))
+
