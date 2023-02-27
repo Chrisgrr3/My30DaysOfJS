@@ -79,6 +79,8 @@ const url = 'https://restcountries.com/v2/all' // countries api
 fetch(url)
     .then(response => response.json()) // accessing the API data as JSON
     .then(data => {
-        console.log(data) // getting the data
+        for(let i = 0; i < 5; i++) {
+            console.log(data[i].name) // getting the data
+        }
     })
     .catch(error => console.error(error)) // handling error if something wrong happens
