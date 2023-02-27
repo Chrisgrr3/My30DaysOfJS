@@ -43,7 +43,7 @@ const tenLargest = async () => {
             if(a.area > b.area) return -1
         })
         for(let i = 0; i < 10; i++) {
-            result.push(countries[i].name)
+            result.push({country: countries[i].name, area: countries[i].area})
         }
         console.log(result)
     }
