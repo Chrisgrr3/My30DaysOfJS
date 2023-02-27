@@ -6,8 +6,23 @@ const fetchData = async () => {
     try {
         const response = await fetch(catsAPI)
         const cats = await response.json()
-        
-        console.log(catAvg)
+        let result = []
+        let avg;
+        let sum = 0
+        for(let i = 0; i < cats.length; i++) {
+            avg = cats[0].weight.metric.split(' - ')
+            avg.forEach((num) => {
+                sum += parseInt(num)
+            })
+            sum = parseFloat(sum / 2)
+            result.push(sum)
+            sum = 0;
+        }
+        result.forEach((num) => {
+            sum += num;
+        })
+        avg = sum / result.length
+        console.log(avg)
     } catch(err) {
         console.error(err)
     }
