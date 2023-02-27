@@ -90,3 +90,16 @@ const square = async function(n) {
 }
 
 console.log(square(2))
+
+async function cube(n) {
+    return Math.pow(n, 3)
+}
+// const cube = (n) => {
+//     return Math.pow(n, 3)
+// }
+
+const cubeVal = async function(n) {
+    const value = await cube(n)
+    console.log(value)
+}
+cubeVal(3)
