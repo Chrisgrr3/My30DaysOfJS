@@ -119,3 +119,16 @@ fetch(url)
     })
     .catch(error => console.error(error))
 
+const fetchData = async () => {
+    try {
+        const response = await fetch(url)
+        const countries = await response.json()
+        for(let i = 100; i < 105; i++) {
+            console.log(countries[i].region)
+        }
+    } catch(err) {
+        console.error(err)
+    }
+}
+
+fetchData()
