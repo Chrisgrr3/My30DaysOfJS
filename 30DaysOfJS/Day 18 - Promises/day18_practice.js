@@ -53,3 +53,16 @@ doPromise
         console.log(result)
     })
     .catch(error => console.log(error))
+
+// Now, we'll make an example where the promise is settled with reject:
+
+const rejPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const skills = ['HTML', 'CSS', 'JS']
+        if(skills.includes('Node')) {
+            resolve('fullstack developer')
+        } else {
+            reject('Something went wrong')
+        }
+    }, 4000)
+})
