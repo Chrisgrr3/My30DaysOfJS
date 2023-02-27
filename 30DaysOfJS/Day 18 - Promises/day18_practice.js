@@ -35,3 +35,16 @@ const promiseSyntax = new Promise((resolve, reject) => {
     resolve('success')
     reject('failure')
 })
+
+// Promise
+const doPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const skills = ['HTML', 'CSS', 'JS']
+        if(skills.length > 0) {
+            resolve(skills)
+        } else {
+            reject('Something went wrong')
+        }
+    }, 2000)
+})
+
