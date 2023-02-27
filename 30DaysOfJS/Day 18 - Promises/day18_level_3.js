@@ -35,13 +35,17 @@ const fetchData = async () => {
 
 const tenLargest = async () => {
     try{
+        let result = []
         const response = await fetch(countriesAPI);
         const countries = await response.json()
         countries.sort((a, b) => {
             if(a.area < b.area) return 1;
             if(a.area > b.area) return -1
         })
-        console.log(countries)
+        for(let i = 0; i < 10; i++) {
+            result.push(countries[i].name)
+        }
+        console.log(result)
     }
     catch (err) {
         console.error(err)
