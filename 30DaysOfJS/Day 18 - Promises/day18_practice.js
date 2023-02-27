@@ -30,3 +30,8 @@ doSomethingElse((err, result) => {
     return console.log(result)
 })
 
+// Promise construction syntax
+const promise = new Promise((resolve, reject) => {
+    resolve('success')
+    reject('failure')
+})
