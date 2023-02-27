@@ -16,4 +16,6 @@ const fetchData = async () => {
     }
 }
 
-fetchData()
+// fetchData()
+
+module.exports = { catsAPI }
