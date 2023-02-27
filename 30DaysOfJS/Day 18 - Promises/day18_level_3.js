@@ -28,12 +28,27 @@ const fetchData = async () => {
     }
 }
 
-fetchData()
+// fetchData()
+
 
 // 2. Read the countries api and find out the 10 largest countries
 
+const tenLargest = async () => {
+    try{
+        const response = await fetch(countriesAPI);
+        const countries = await response.json()
+        countries.sort((a, b) => {
+            if(a.area < b.area) return 1;
+            if(a.area > b.area) return -1
+        })
+        console.log(countries)
+    }
+    catch (err) {
+        console.error(err)
+    }
+}
 
-
+tenLargest()
 
 // 3. Read the countries api and count total number of languages in the world used as officials.
 
