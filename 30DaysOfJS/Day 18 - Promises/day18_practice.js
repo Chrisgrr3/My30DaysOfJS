@@ -84,3 +84,9 @@ fetch(url)
         }
     })
     .catch(error => console.error(error)) // handling error if something wrong happens
+
+const square = async function(n) {
+    return n * n
+}
+
+console.log(square(2))
