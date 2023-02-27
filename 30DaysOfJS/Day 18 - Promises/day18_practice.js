@@ -14,3 +14,19 @@ const callback = (err, result) => {
 }
 
 doSomething(callback)
+
+// Callback function where err is false, returning the else block
+const doSomethingElse = cBack => {
+    setTimeout(() => {
+        const skills = ['HTML', 'CSS', 'JS']
+        cBack(false, skills)
+    }, 2000)
+}
+
+doSomethingElse((err, result) => {
+    if (err) {
+        return console.log(err)
+    }
+    return console.log(result)
+})
+
