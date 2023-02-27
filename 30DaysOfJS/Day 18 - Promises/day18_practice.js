@@ -45,6 +45,11 @@ const doPromise = new Promise((resolve, reject) => {
         } else {
             reject('Something went wrong')
         }
-    }, 2000)
+    }, 3000)
 })
 
+doPromise
+    .then(result => {
+        console.log(result)
+    })
+    .catch(error => console.log(error))
