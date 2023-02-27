@@ -66,3 +66,11 @@ const rejPromise = new Promise((resolve, reject) => {
         }
     }, 4000)
 })
+
+rejPromise
+    .then(result => {
+        console.log(result)
+    })
+    .catch(error => {
+        console.log(error)
+    })
