@@ -52,7 +52,25 @@ const tenLargest = async () => {
     }
 }
 
-tenLargest()
+// tenLargest()
 
 // 3. Read the countries api and count total number of languages in the world used as officials.
 
+const totalLanguages = async () => {
+    try {
+        const languageSet = new Set()
+        const response = await fetch(countriesAPI)
+        const countries = await response.json()
+        countries.forEach((country) => {
+            for(let i = 0; i < country.languages.length; i++) {
+                languageSet.add(country.languages[i].name)
+            }
+        })
+        const numberOfLangs = languageSet.size
+        console.log(`The number of languages is ${numberOfLangs}`)
+    }
+    catch (err){
+        console.error(err)
+    }
+}
+totalLanguages()
