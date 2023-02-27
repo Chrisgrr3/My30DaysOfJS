@@ -74,3 +74,5 @@ rejPromise
     .catch(error => {
         console.log(error)
     })
+
+const url = 'https://restcountries.com/v2/all' // countries api
