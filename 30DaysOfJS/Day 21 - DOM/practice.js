@@ -7,4 +7,9 @@ document.addEventListener("DOMContentLoaded" , () => {
     for(let i = 0; i < allTitles.length; i++) {
         console.log(allTitles[i])
     }
+    console.log('Below, we are getting each element with the class name \'title\'')
+    const allClasses = document.getElementsByClassName('title')
+    for(let i = 0; i < allClasses.length; i++) {
+        console.log(allClasses[i])
+    }
 })
