@@ -11,8 +11,8 @@ const gravity = 9.81
 
 
 // Arrays: declare using const and make array name plural.
-let numbers = [1,2,3,4,5,6]
-let letters = ['a','b','c']
+const numbers = [1,2,3,4,5,6]
+const letters = ['a','b','c']
 
 
 
