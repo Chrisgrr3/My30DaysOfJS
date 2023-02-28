@@ -16,4 +16,14 @@ document.addEventListener("DOMContentLoaded" , () => {
     console.log("Below, we are getting the element with the id 'first-title'")
     let firstTitle = document.getElementById('first-title')
     console.log(firstTitle)
+
+    const titles = document.querySelectorAll('h1') // Selects all available h1 elements
+
+    console.log(titles.length)
+    titles.forEach(title => console.log(title))
+
+    console.log('Below, we add a class name and id attributes to the fourth h1 element')
+    const getTitles = document.querySelectorAll('h1')
+    getTitles[3].className = 'title'
+    getTitles[3].id = 'fourth-title'
 })
