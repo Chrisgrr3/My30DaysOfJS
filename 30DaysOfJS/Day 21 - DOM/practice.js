@@ -1,0 +1,1 @@
+const allTitles = document.getElementsByTagName('h1')
