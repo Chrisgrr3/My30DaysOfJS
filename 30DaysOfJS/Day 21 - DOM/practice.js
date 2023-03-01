@@ -30,4 +30,7 @@ document.addEventListener("DOMContentLoaded" , () => {
     console.log("Now, let's add a 'header-title' class to the fourth h1")
     getTitles[3].classList.add('header-title')
     console.log(getTitles[3])
+
+    console.log("And now we'll remove the 'title' class from the fourth h1")
+    getTitles[3].classList.remove('title')
 })
