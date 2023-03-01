@@ -36,4 +36,13 @@ document.addEventListener("DOMContentLoaded" , () => {
 
     console.log('Adding text to 4 h1 element')
     getTitles[3].textContent = 'Fourth Title'
+
+    getTitles.forEach((title, index) => {
+        title.style.fontSize = '24px'
+        if (index % 2 === 0) {
+            title.style.color = 'green'
+        } else {
+            title.style.color = 'red'
+        }
+    })
 })
