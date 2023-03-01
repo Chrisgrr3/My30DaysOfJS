@@ -26,4 +26,8 @@ document.addEventListener("DOMContentLoaded" , () => {
     const getTitles = document.querySelectorAll('h1')
     getTitles[3].className = 'title'
     getTitles[3].id = 'fourth-title'
+    
+    console.log("Now, let's add a 'header-title' class to the fourth h1")
+    getTitles[3].classList.add('header-title')
+    console.log(getTitles[3])
 })
