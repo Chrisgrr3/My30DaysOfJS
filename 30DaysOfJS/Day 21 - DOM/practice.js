@@ -33,4 +33,7 @@ document.addEventListener("DOMContentLoaded" , () => {
 
     console.log("And now we'll remove the 'title' class from the fourth h1")
     getTitles[3].classList.remove('title')
+
+    console.log('Adding text to 4 h1 element')
+    getTitles[3].textContent = 'Fourth Title'
 })
