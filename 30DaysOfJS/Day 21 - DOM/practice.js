@@ -41,8 +41,12 @@ document.addEventListener("DOMContentLoaded" , () => {
         title.style.fontSize = '24px'
         if (index % 2 === 0) {
             title.style.color = 'green'
+            title.style.backgroundColor = 'pink'
+            title.style.display = 'inline-block'
         } else {
             title.style.color = 'red'
+            title.style.backgroundColor = 'purple'
+            title.style.display = 'inline-block'
         }
     })
 })
