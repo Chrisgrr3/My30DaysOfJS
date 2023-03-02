@@ -12,6 +12,16 @@
         title.className = 'title'
         title.style.fontSize = '24px'
         title.textContent = 'Creating HTML elememt DOM Day 2'
+        document.body.appendChild(title)
+
+        let subheading
+        for(let i = 0; i < 3; i++) {
+            subheading = document.createElement('h2')
+            subheading.className = 'subheading'
+            subheading.style.fontSize = '16px'
+            subheading.textContent = i
+            document.body.appendChild(subheading)
+        }
     </script>
 </body>
 
