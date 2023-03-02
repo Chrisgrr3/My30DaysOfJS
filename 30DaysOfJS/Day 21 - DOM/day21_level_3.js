@@ -14,3 +14,7 @@
 
     // e. Coming challenges have background red
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+})
