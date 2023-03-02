@@ -1,6 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 1
     const firstParagraph = document.querySelector('p')
     console.log(firstParagraph)
+
+    // 2 
+    const p1ById = document.querySelector('#first-p')
+    const p2ById = document.querySelector('#second-p')
+    const p3ById = document.querySelector('#third-p')
+    const p4ById = document.querySelector('#fourth-p')
+    console.log(p1ById, p2ById, p3ById, p4ById)
+
+    
 })
 
 // 1. Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
