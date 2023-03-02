@@ -22,6 +22,11 @@ const fetchData = async () => {
         console.log(top)
         top.style.textAlign = 'center'
 
+        countries.sort((a, b) => {
+            if(a.name.common < b.name.common) return -1;
+            if(a.name.common > b.name.common) return 1
+        })
+
         
 
     } catch (error) {
