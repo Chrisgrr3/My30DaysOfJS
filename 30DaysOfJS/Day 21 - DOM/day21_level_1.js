@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5
     p4ById.textContent = 'Fourth Paragraph'
+
+    // 6
+    p4ById.id = '4id'
+    p4ById.className = 'fourth'
+    console.log(p4ById)
+    p3ById.setAttribute('id', '3id')
+    p3ById.setAttribute('class', 'third')
+    console.log(p3ById)
+    p2ById.id = '2id'
+    p2ById.classList = 'second'
+    console.log(p2ById)
+    p1ById.setAttribute('id', '1id')
+    p1ById.setAttribute('class', 'first')
 })
 
 // 1. Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
