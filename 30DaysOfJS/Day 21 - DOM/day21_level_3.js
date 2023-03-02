@@ -27,4 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setInterval(changeColors, 1000)
     setInterval(changeBackground, 1000)
+
+    const items = document.querySelectorAll('li')
+    let temp;
+    for(let i = 0; i < items.length; i++) {
+        temp = items[i].innerHTML.split(' ')
+        if(temp[2] === 'Done') {
+            items[i].style.backgroundColor = 'green'
+        } else if (temp[2] === 'Ongoing') {
+            items[i].style.backgroundColor = 'yellow'
+        } else if (temp[2] === 'Coming') {
+            items[i].style.backgroundColor = 'red'
+        }
+    }
 })
