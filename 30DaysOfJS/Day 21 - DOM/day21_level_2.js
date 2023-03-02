@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
             tags[i].style.color = 'red'
         }
     }
+
+    // 3
+    for(let i = 0; i < tags.length; i++) {
+        tags[i].setAttribute('id',`${i}`)
+        tags[i].className = `${i}`
+        tags[i].textContent = `Paragraph ${i + 1}`
+    }
 })
 
 // 1. Change stlye of each paragraph using JavaScript(eg. color, background, border, font-size, font-family)

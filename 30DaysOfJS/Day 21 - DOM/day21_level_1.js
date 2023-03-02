@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 5
-    p4ById.textContent = 'Fourth Paragraph'
+    // p4ById.textContent = 'Fourth Paragraph'
 
     // 6
     p4ById.id = '4id'
