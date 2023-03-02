@@ -17,9 +17,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const year = document.querySelector('.colors')
+    const h1 = document.querySelector('h1')
     const colors = ['red', 'green', 'yellow', 'blue', 'purple', 'pink', 'orange', 'cyan']
     function changeColors() {
         year.style.color = colors[Math.floor(Math.random() * colors.length)]
     }
+    function changeBackground() {
+        h1.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+    }
     setInterval(changeColors, 1000)
+    setInterval(changeBackground, 1000)
 })
