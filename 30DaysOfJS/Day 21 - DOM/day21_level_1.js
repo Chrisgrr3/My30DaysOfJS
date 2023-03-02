@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     for(let i = 0; i < allPs.length; i++) {
         console.log(allPs[i].textContent)
     }
+
+    // 5
+    p4ById.textContent = 'Fourth Paragraph'
 })
 
 // 1. Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
