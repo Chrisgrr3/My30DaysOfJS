@@ -14,7 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const allPs = document.querySelectorAll('p')
     console.log(allPs)
 
-
+    // 4
+    for(let i = 0; i < allPs.length; i++) {
+        console.log(allPs[i].textContent)
+    }
 })
 
 // 1. Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
