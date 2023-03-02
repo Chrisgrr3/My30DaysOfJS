@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const p4ById = document.querySelector('#fourth-p')
     console.log(p1ById, p2ById, p3ById, p4ById)
 
-    
+    // 3
+    const allPs = document.querySelectorAll('p')
+    console.log(allPs)
 })
 
 // 1. Create an index.html file and put four p elements as above: Get the first paragraph by using document.querySelector(tagname) and tag name
