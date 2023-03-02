@@ -22,7 +22,18 @@
             subheading.textContent = i
             document.body.appendChild(subheading)
         }
+        document.addEventListener('DOMContentLoaded', () => {
+            const h3s = document.querySelectorAll('h3')
+            for(const h3 of h3s) {
+                document.body.removeChild(h3)
+            }
+        })
     </script>
+
+    <h3>I'm getting deleted</h3>
+    <h3>So am I</h3>
+    <h3>Why are we getting deleted?</h3>
+    <h3>Oh, it's because we're &lt;h3&gt; elements.</h3>
 </body>
 
 </html>
