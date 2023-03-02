@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     let tags = document.querySelectorAll('p')
+    // 1
+
     for(let i = 0; i < tags.length; i++) {
         if(i % 2 == 0) {
-            tags[i].style.color = 'green'
-            tags[i].style.background = 'blue'
+            tags[i].style.color = 'purple'
+            tags[i].style.background = 'pink'
             tags[i].style.border = '10px dashed black'
             tags[i].style.fontSize = '30px'
             tags[i].style.fontFamily = 'arial'
@@ -13,6 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
             tags[i].style.border = '4px dotted green'
             tags[i].style.fontSize = '40px'
             tags[i].style.fontFamily = 'sans-serif'
+        }
+    }
+
+    // 2
+    for(let i = 0; i < tags.length; i++) {
+        if(i % 2 == 0) {
+            tags[i].style.color = 'green'
+        } else {
+            tags[i].style.color = 'red'
         }
     }
 })
