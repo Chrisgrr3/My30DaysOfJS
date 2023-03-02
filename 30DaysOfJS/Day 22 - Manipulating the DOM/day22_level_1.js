@@ -15,21 +15,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const isPrime = num => {
         let result = true;
-        for(let i = 1; i < num; i++) {
+        if(num == 2) return true;
+        if(num == 1) return false;
+        if(num == 0) return false;
+        for(let i = 2; i < num; i++) {
             if(num % i == 0) {
                 result = false
             }
-            return result
         }
+        return result
     }
     for(let i = 0; i <= 100; i++) {
         newDiv = document.createElement('div')
         newDiv.style.display = 'inline-block'
-        if(isPrime(i)) {
-            newDiv.style.backgroundColor = 'red'
+        if(isEven(i)) {
+            newDiv.style.backgroundColor = '#21BF73'
+        } else {
+            newDiv.style.backgroundColor = '#FDDB3A'
         }
-        newDiv.innerHTML = i
+        if(isPrime(i)) {
+            newDiv.style.backgroundColor = '#FD5E53'
+        }
+        newDiv.innerHTML = `<span>${i}</span>`
+        newDiv.style.paddingTop = '25px'
+        newDiv.style.paddingBottom = '25px'
+        newDiv.style.color = 'white'
+        newDiv.style.textAlign = 'center'
+        newDiv.style.width = '112px'
+        newDiv.style.fontSize = '21px'
+        newDiv.style.fontWeight = '1000'
+        newDiv.style.fontFamily = "cursive"
+        newDiv.style.margin = '3px'
         container.appendChild(newDiv)
+    }
+    const spans = document.querySelectorAll('span')
+    for(let span of spans) {
+        span.style.verticalAlign = 'bottom'
     }
 })
 
